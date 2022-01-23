@@ -4,7 +4,7 @@ library(highcharter)
 library(viridisLite)
 library(countrycode)
 
-population <- read.csv("population-cleaned.csv")
+population <- read.csv("./Data/population-cleaned.csv")
 
 #Colors for the map
 data(worldgeojson, package = "highcharter")

@@ -64,6 +64,16 @@ shinyUI(
           text = "Attacks",
           tabName = "attacks",
           icon = icon("procedures")
+        ),
+        menuItem(
+          text = "User Manual",
+          tabName = "documentation",
+          icon = icon("procedures")
+        ),
+        menuItem(
+          text = "Deon",
+          tabName = "deon",
+          icon = icon("procedures")
         )
       )
     ),

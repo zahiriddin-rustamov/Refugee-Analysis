@@ -1,0 +1,1726 @@
+"year","country","iso3","refugees","attacks"
+2010,"Afghanistan","AFG",6464,542
+2010,"Albania","ALB",95,0
+2010,"Algeria","DZA",94441,100
+2010,"Angola","AGO",19370,2
+2010,"Argentina","ARG",4173,5
+2010,"Armenia","ARM",3306,0
+2010,"Australia","AUS",25504,1
+2010,"Austria","AUT",68215,0
+2010,"Azerbaijan","AZE",1909,0
+2010,"Bahamas","BHS",35,0
+2010,"Bahrain","BHR",231,2
+2010,"Bangladesh","BGD",229256,22
+2010,"Belarus","BLR",649,2
+2010,"Belgium","BEL",36179,0
+2010,"Belize","BLZ",165,0
+2010,"Benin","BEN",7229,0
+2010,"Bolivia (Plurinational State of)","BOL",723,0
+2010,"Bosnia and Herzegovina","BIH",7163,1
+2010,"Botswana","BWA",3234,0
+2010,"Brazil","BRA",5198,0
+2010,"Brunei Darussalam","BRN",0,0
+2010,"Bulgaria","BGR",6911,0
+2010,"Burkina Faso","BFA",1061,0
+2010,"Burundi","BDI",41423,29
+2010,"Cambodia","KHM",173,0
+2010,"Cameroon","CMR",106647,3
+2010,"Canada","CAN",216542,2
+2010,"Cayman Islands","CYM",5,0
+2010,"Central African Rep.","CAF",22781,13
+2010,"Chad","TCD",348036,1
+2010,"Chile","CHL",1884,5
+2010,"China","CHN",301104,1
+2010,"China, Hong Kong SAR","HKG",600,0
+2010,"China, Macao SAR","MAC",10,0
+2010,"Colombia","COL",363,136
+2010,"Congo","COG",138617,0
+2010,"Costa Rica","CRI",19863,0
+2010,"Cote d'Ivoire","CIV",26459,7
+2010,"Croatia","HRV",997,0
+2010,"Cuba","CUB",417,0
+2010,"Curacao ","CUW",7,0
+2010,"Cyprus","CYP",8782,0
+2010,"Czechia","CZE",3455,0
+2010,"Dem. Rep. of the Congo","COD",167253,18
+2010,"Denmark","DNK",21241,1
+2010,"Djibouti","DJI",15829,0
+2010,"Dominican Rep.","DOM",2356,0
+2010,"Ecuador","ECU",171096,0
+2010,"Egypt","EGY",109327,2
+2010,"El Salvador","SLV",57,0
+2010,"Eritrea","ERI",4944,1
+2010,"Estonia","EST",36,0
+2010,"Eswatini","SWZ",757,0
+2010,"Ethiopia","ETH",155302,2
+2010,"Fiji","FJI",5,0
+2010,"Finland","FIN",10796,0
+2010,"France","FRA",249263,3
+2010,"Gabon","GAB",13135,0
+2010,"Gambia","GMB",8447,0
+2010,"Georgia","GEO",680,7
+2010,"Germany","DEU",646180,1
+2010,"Ghana","GHA",14576,0
+2010,"Greece","GRC",57157,49
+2010,"Grenada","GRD",5,0
+2010,"Guatemala","GTM",137,0
+2010,"Guinea","GIN",14873,0
+2010,"Guinea-Bissau","GNB",7998,0
+2010,"Guyana","GUY",7,0
+2010,"Haiti","HTI",5,0
+2010,"Honduras","HND",11,0
+2010,"Hungary","HUN",5754,0
+2010,"Iceland","ISL",97,0
+2010,"India","IND",188555,663
+2010,"Indonesia","IDN",2866,4
+2010,"Iran (Islamic Rep. of)","IRN",1075130,14
+2010,"Iraq","IRQ",37719,1179
+2010,"Ireland","IRL",14187,4
+2010,"Israel","ISR",31036,14
+2010,"Italy","ITA",60472,10
+2010,"Jamaica","JAM",19,0
+2010,"Japan","JPN",5606,0
+2010,"Jordan","JOR",453045,2
+2010,"Kazakhstan","KAZ",4717,0
+2010,"Kenya","KEN",430848,12
+2010,"Kuwait","KWT",3457,0
+2010,"Kyrgyzstan","KGZ",3010,1
+2010,"Latvia","LVA",103,0
+2010,"Lebanon","LBN",9460,5
+2010,"Liberia","LBR",24761,0
+2010,"Libya","LBY",11107,0
+2010,"Liechtenstein","LIE",121,0
+2010,"Lithuania","LTU",875,0
+2010,"Luxembourg","LUX",3914,0
+2010,"Malawi","MWI",15094,0
+2010,"Malaysia","MYS",92835,0
+2010,"Mali","MLI",15254,1
+2010,"Malta","MLT",7425,0
+2010,"Mauritania","MRT",26946,1
+2010,"Mexico","MEX",1520,5
+2010,"Mongolia","MNG",12,0
+2010,"Montenegro","MNE",16368,0
+2010,"Montserrat","MSR",14,0
+2010,"Morocco","MAR",1067,0
+2010,"Mozambique","MOZ",9974,0
+2010,"Myanmar","MMR",0,11
+2010,"Namibia","NAM",8660,0
+2010,"Nepal","NPL",90741,38
+2010,"Netherlands","NLD",87982,1
+2010,"New Zealand","NZL",2455,0
+2010,"Nicaragua","NIC",74,0
+2010,"Niger","NER",326,3
+2010,"Nigeria","NGA",10553,63
+2010,"North Macedonia","MKD",1546,0
+2010,"Norway","NOR",52688,1
+2010,"Oman","OMN",91,0
+2010,"Pakistan","PAK",1902712,713
+2010,"Panama","PAN",17535,0
+2010,"Papua New Guinea","PNG",9699,0
+2010,"Paraguay","PRY",103,2
+2010,"Peru","PER",1386,0
+2010,"Philippines","PHL",296,205
+2010,"Poland","POL",17648,1
+2010,"Portugal","PRT",429,0
+2010,"Qatar","QAT",66,0
+2010,"Rep. of Korea","KOR",1046,0
+2010,"Rep. of Moldova","MDA",206,0
+2010,"Romania","ROU",1391,0
+2010,"Russian Federation","RUS",6356,251
+2010,"Rwanda","RWA",55682,8
+2010,"Saint Lucia","LCA",6,0
+2010,"Saudi Arabia","SAU",663,0
+2010,"Senegal","SEN",22844,1
+2010,"Serbia and Kosovo: S/RES/1244 (1999)","SRB",73798,1
+2010,"Sierra Leone","SLE",8566,0
+2010,"Singapore","SGP",5,0
+2010,"Sint Maarten (Dutch part)","SXM",5,0
+2010,"Slovakia","SVK",718,0
+2010,"Slovenia","SVN",427,0
+2010,"Somalia","SOM",26045,130
+2010,"South Africa","ZAF",229601,0
+2010,"Spain","ESP",6502,3
+2010,"Sri Lanka","LKA",358,3
+2010,"Sudan","SDN",184343,28
+2010,"Sweden","SWE",101226,3
+2010,"Switzerland","CHE",61697,0
+2010,"Syrian Arab Rep.","SYR",1007906,0
+2010,"Tajikistan","TJK",4785,1
+2010,"Thailand","THA",106899,253
+2010,"Togo","TGO",14195,0
+2010,"Trinidad and Tobago","TTO",116,1
+2010,"Tunisia","TUN",110,0
+2010,"Turkey","TUR",16724,20
+2010,"Turkmenistan","TKM",64,0
+2010,"Uganda","UGA",156602,6
+2010,"Ukraine","UKR",5965,4
+2010,"United Arab Emirates","ARE",626,2
+2010,"United Kingdom of Great Britain and Northern Ireland","GBR",253014,57
+2010,"United Rep. of Tanzania","TZA",110532,1
+2010,"United States of America","USA",270837,17
+2010,"Uruguay","URY",214,0
+2010,"Uzbekistan","UZB",309,0
+2010,"Vanuatu","VUT",5,0
+2010,"Venezuela (Bolivarian Republic of)","VEN",217388,0
+2010,"Viet Nam","VNM",1928,0
+2010,"Yemen","YEM",192635,112
+2010,"Zambia","ZMB",48177,0
+2010,"Zimbabwe","ZWE",4846,1
+2011,"Afghanistan","AFG",3063,421
+2011,"Albania","ALB",105,0
+2011,"Algeria","DZA",94950,15
+2011,"Angola","AGO",19366,0
+2011,"Argentina","ARG",4537,1
+2011,"Armenia","ARM",2930,0
+2011,"Aruba","ABW",5,0
+2011,"Australia","AUS",28633,0
+2011,"Austria","AUT",71519,1
+2011,"Azerbaijan","AZE",1769,0
+2011,"Bahamas","BHS",40,0
+2011,"Bahrain","BHR",355,1
+2011,"Bangladesh","BGD",229669,13
+2011,"Belarus","BLR",640,1
+2011,"Belgium","BEL",41402,0
+2011,"Belize","BLZ",134,0
+2011,"Benin","BEN",7567,0
+2011,"Bolivia (Plurinational State of)","BOL",718,0
+2011,"Bosnia and Herzegovina","BIH",6964,1
+2011,"Botswana","BWA",3556,0
+2011,"Brazil","BRA",9110,0
+2011,"Brunei Darussalam","BRN",0,0
+2011,"Bulgaria","BGR",7057,2
+2011,"Burkina Faso","BFA",1216,0
+2011,"Burundi","BDI",45712,8
+2011,"Cambodia","KHM",106,0
+2011,"Cameroon","CMR",103657,3
+2011,"Canada","CAN",206714,0
+2011,"Central African Rep.","CAF",19184,3
+2011,"Chad","TCD",366653,0
+2011,"Chile","CHL",2025,6
+2011,"China","CHN",301042,4
+2011,"China, Hong Kong SAR","HKG",720,0
+2011,"China, Macao SAR","MAC",10,0
+2011,"Colombia","COL",323,94
+2011,"Congo","COG",144232,0
+2011,"Costa Rica","CRI",20495,0
+2011,"Cote d'Ivoire","CIV",24871,3
+2011,"Croatia","HRV",1037,0
+2011,"Cuba","CUB",381,0
+2011,"Curacao ","CUW",11,0
+2011,"Cyprus","CYP",6540,0
+2011,"Czechia","CZE",3333,1
+2011,"Dem. Rep. of the Congo","COD",153879,16
+2011,"Denmark","DNK",14801,0
+2011,"Djibouti","DJI",22240,0
+2011,"Dominican Rep.","DOM",2378,0
+2011,"Ecuador","ECU",144941,1
+2011,"Egypt","EGY",113993,18
+2011,"El Salvador","SLV",44,0
+2011,"Eritrea","ERI",4726,1
+2011,"Estonia","EST",39,1
+2011,"Eswatini","SWZ",757,0
+2011,"Ethiopia","ETH",290179,3
+2011,"Fiji","FJI",5,0
+2011,"Finland","FIN",11432,0
+2011,"France","FRA",259447,8
+2011,"Gabon","GAB",4126,0
+2011,"Gambia","GMB",9548,0
+2011,"Georgia","GEO",497,3
+2011,"Germany","DEU",634326,8
+2011,"Ghana","GHA",26225,0
+2011,"Greece","GRC",45508,11
+2011,"Grenada","GRD",5,0
+2011,"Guatemala","GTM",153,0
+2011,"Guinea","GIN",17210,0
+2011,"Guinea-Bissau","GNB",7884,0
+2011,"Guyana","GUY",7,0
+2011,"Haiti","HTI",6,0
+2011,"Honduras","HND",16,1
+2011,"Hungary","HUN",5445,0
+2011,"Iceland","ISL",111,0
+2011,"India","IND",188626,645
+2011,"Indonesia","IDN",4230,21
+2011,"Iran (Islamic Rep. of)","IRN",886907,13
+2011,"Iraq","IRQ",39379,1308
+2011,"Ireland","IRL",13614,4
+2011,"Israel","ISR",47665,51
+2011,"Italy","ITA",71591,5
+2011,"Jamaica","JAM",19,0
+2011,"Japan","JPN",6325,0
+2011,"Jordan","JOR",455968,0
+2011,"Kazakhstan","KAZ",676,5
+2011,"Kenya","KEN",601750,42
+2011,"Kuwait","KWT",1450,1
+2011,"Kyrgyzstan","KGZ",6501,1
+2011,"Latvia","LVA",304,0
+2011,"Lebanon","LBN",10710,10
+2011,"Lesotho","LSO",38,0
+2011,"Liberia","LBR",128852,0
+2011,"Libya","LBY",13013,2
+2011,"Liechtenstein","LIE",136,0
+2011,"Lithuania","LTU",897,0
+2011,"Luxembourg","LUX",4549,0
+2011,"Madagascar","MDG",5,1
+2011,"Malawi","MWI",16848,0
+2011,"Malaysia","MYS",97593,0
+2011,"Mali","MLI",18115,4
+2011,"Malta","MLT",8396,0
+2011,"Mauritania","MRT",26804,3
+2011,"Mexico","MEX",2258,2
+2011,"Monaco","MCO",37,0
+2011,"Mongolia","MNG",5,0
+2011,"Montenegro","MNE",12905,0
+2011,"Montserrat","MSR",5,0
+2011,"Morocco","MAR",1338,1
+2011,"Mozambique","MOZ",13666,0
+2011,"Myanmar","MMR",0,2
+2011,"Namibia","NAM",6975,0
+2011,"Nepal","NPL",73580,46
+2011,"Netherlands","NLD",84993,2
+2011,"New Zealand","NZL",2117,0
+2011,"Nicaragua","NIC",90,0
+2011,"Niger","NER",414,2
+2011,"Nigeria","NGA",10329,175
+2011,"North Macedonia","MKD",1513,0
+2011,"Norway","NOR",51785,3
+2011,"Oman","OMN",128,0
+2011,"Pakistan","PAK",1704315,1012
+2011,"Panama","PAN",18031,0
+2011,"Papua New Guinea","PNG",9378,0
+2011,"Paraguay","PRY",125,4
+2011,"Peru","PER",1614,0
+2011,"Philippines","PHL",164,151
+2011,"Poland","POL",18707,0
+2011,"Portugal","PRT",611,2
+2011,"Qatar","QAT",128,0
+2011,"Rep. of Korea","KOR",1548,0
+2011,"Rep. of Moldova","MDA",173,0
+2011,"Romania","ROU",1754,0
+2011,"Russian Federation","RUS",4856,188
+2011,"Rwanda","RWA",55616,2
+2011,"Saint Lucia","LCA",5,0
+2011,"Saudi Arabia","SAU",675,2
+2011,"Senegal","SEN",22901,4
+2011,"Serbia and Kosovo: S/RES/1244 (1999)","SRB",71095,0
+2011,"Sierra Leone","SLE",8152,0
+2011,"Sint Maarten (Dutch part)","SXM",5,0
+2011,"Slovakia","SVK",720,0
+2011,"Slovenia","SVN",227,0
+2011,"Somalia","SOM",8118,185
+2011,"South Africa","ZAF",277240,0
+2011,"South Sudan","SSD",105113,0
+2011,"Spain","ESP",6890,0
+2011,"Sri Lanka","LKA",385,0
+2011,"Sudan","SDN",146303,38
+2011,"Sweden","SWE",104709,1
+2011,"Switzerland","CHE",67294,3
+2011,"Syrian Arab Rep.","SYR",757248,49
+2011,"Tajikistan","TJK",5348,0
+2011,"Thailand","THA",102576,182
+2011,"Togo","TGO",19646,0
+2011,"Trinidad and Tobago","TTO",20,0
+2011,"Tunisia","TUN",4629,3
+2011,"Turkey","TUR",25393,51
+2011,"Turkmenistan","TKM",59,0
+2011,"Uganda","UGA",162891,0
+2011,"Ukraine","UKR",6757,3
+2011,"United Arab Emirates","ARE",716,0
+2011,"United Kingdom of Great Britain and Northern Ireland","GBR",210355,47
+2011,"United Rep. of Tanzania","TZA",131950,0
+2011,"United States of America","USA",276452,10
+2011,"Uruguay","URY",214,0
+2011,"Uzbekistan","UZB",216,0
+2011,"Venezuela (Bolivarian Republic of)","VEN",219369,0
+2011,"Viet Nam","VNM",990,0
+2011,"Yemen","YEM",220606,118
+2011,"Zambia","ZMB",46645,0
+2011,"Zimbabwe","ZWE",5333,1
+2012,"Afghanistan","AFG",16233,1469
+2012,"Albania","ALB",112,0
+2012,"Algeria","DZA",95852,41
+2012,"Angola","AGO",43722,0
+2012,"Argentina","ARG",5369,2
+2012,"Armenia","ARM",3227,0
+2012,"Aruba","ABW",5,0
+2012,"Australia","AUS",41052,0
+2012,"Austria","AUT",74125,0
+2012,"Azerbaijan","AZE",1604,0
+2012,"Bahamas","BHS",49,0
+2012,"Bahrain","BHR",335,26
+2012,"Bangladesh","BGD",230696,18
+2012,"Belarus","BLR",628,3
+2012,"Belgium","BEL",37046,1
+2012,"Belize","BLZ",102,0
+2012,"Benin","BEN",5093,0
+2012,"Bolivia (Plurinational State of)","BOL",725,1
+2012,"Bosnia and Herzegovina","BIH",6935,0
+2012,"Botswana","BWA",2996,0
+2012,"Brazil","BRA",6106,1
+2012,"Brunei Darussalam","BRN",0,0
+2012,"Bulgaria","BGR",3543,2
+2012,"Burkina Faso","BFA",39988,0
+2012,"Burundi","BDI",47940,4
+2012,"Cambodia","KHM",95,0
+2012,"Cameroon","CMR",102083,0
+2012,"Canada","CAN",196398,3
+2012,"Central African Rep.","CAF",16618,4
+2012,"Chad","TCD",373863,0
+2012,"Chile","CHL",2045,2
+2012,"China","CHN",301290,4
+2012,"China, Hong Kong SAR","HKG",903,0
+2012,"China, Macao SAR","MAC",5,0
+2012,"Colombia","COL",274,115
+2012,"Congo","COG",101761,0
+2012,"Costa Rica","CRI",21059,0
+2012,"Cote d'Ivoire","CIV",4480,16
+2012,"Croatia","HRV",1051,0
+2012,"Cuba","CUB",371,0
+2012,"Curacao ","CUW",37,0
+2012,"Cyprus","CYP",6251,1
+2012,"Czechia","CZE",3346,0
+2012,"Dem. Rep. of the Congo","COD",66927,25
+2012,"Denmark","DNK",13336,0
+2012,"Djibouti","DJI",22229,0
+2012,"Dominican Rep.","DOM",1521,0
+2012,"Ecuador","ECU",138346,1
+2012,"Egypt","EGY",126861,49
+2012,"El Salvador","SLV",43,0
+2012,"Eritrea","ERI",3617,0
+2012,"Estonia","EST",48,0
+2012,"Eswatini","SWZ",914,0
+2012,"Ethiopia","ETH",377225,3
+2012,"Fiji","FJI",7,0
+2012,"Finland","FIN",11777,0
+2012,"France","FRA",267750,66
+2012,"Gabon","GAB",4029,0
+2012,"Gambia","GMB",9846,0
+2012,"Georgia","GEO",920,3
+2012,"Germany","DEU",675242,5
+2012,"Ghana","GHA",18615,0
+2012,"Greece","GRC",38273,23
+2012,"Guatemala","GTM",162,1
+2012,"Guinea","GIN",10899,0
+2012,"Guinea-Bissau","GNB",7875,1
+2012,"Guyana","GUY",7,0
+2012,"Haiti","HTI",11,0
+2012,"Honduras","HND",16,0
+2012,"Hungary","HUN",4420,0
+2012,"Iceland","ISL",142,1
+2012,"India","IND",189193,613
+2012,"Indonesia","IDN",7918,39
+2012,"Iran (Islamic Rep. of)","IRN",868257,5
+2012,"Iraq","IRQ",103726,1435
+2012,"Ireland","IRL",11732,29
+2012,"Israel","ISR",54172,59
+2012,"Italy","ITA",79102,10
+2012,"Jamaica","JAM",19,0
+2012,"Japan","JPN",7274,0
+2012,"Jordan","JOR",305634,2
+2012,"Kazakhstan","KAZ",642,4
+2012,"Kenya","KEN",606861,80
+2012,"Kuwait","KWT",1507,0
+2012,"Kyrgyzstan","KGZ",5288,0
+2012,"Latvia","LVA",284,0
+2012,"Lebanon","LBN",135828,15
+2012,"Lesotho","LSO",33,0
+2012,"Liberia","LBR",65945,1
+2012,"Libya","LBY",13609,57
+2012,"Liechtenstein","LIE",120,0
+2012,"Lithuania","LTU",941,0
+2012,"Luxembourg","LUX",4149,0
+2012,"Madagascar","MDG",5,1
+2012,"Malawi","MWI",16656,0
+2012,"Malaysia","MYS",101796,2
+2012,"Mali","MLI",14166,19
+2012,"Malta","MLT",8996,0
+2012,"Mauritania","MRT",81296,0
+2012,"Mexico","MEX",1854,16
+2012,"Monaco","MCO",37,0
+2012,"Mongolia","MNG",16,0
+2012,"Montenegro","MNE",11301,0
+2012,"Montserrat","MSR",5,0
+2012,"Morocco","MAR",2906,0
+2012,"Mozambique","MOZ",12587,1
+2012,"Myanmar","MMR",0,17
+2012,"Namibia","NAM",2892,0
+2012,"Nauru","NRU",379,0
+2012,"Nepal","NPL",56280,46
+2012,"Netherlands","NLD",82299,0
+2012,"New Zealand","NZL",1752,0
+2012,"Nicaragua","NIC",135,0
+2012,"Niger","NER",50608,1
+2012,"Nigeria","NGA",4189,615
+2012,"North Macedonia","MKD",1594,1
+2012,"Norway","NOR",52122,0
+2012,"Oman","OMN",159,0
+2012,"Pakistan","PAK",1641733,1654
+2012,"Panama","PAN",17771,0
+2012,"Papua New Guinea","PNG",9534,0
+2012,"Paraguay","PRY",134,4
+2012,"Peru","PER",1573,9
+2012,"Philippines","PHL",170,249
+2012,"Poland","POL",18291,0
+2012,"Portugal","PRT",665,0
+2012,"Qatar","QAT",134,0
+2012,"Rep. of Korea","KOR",2014,0
+2012,"Rep. of Moldova","MDA",229,1
+2012,"Romania","ROU",1284,0
+2012,"Russian Federation","RUS",3980,151
+2012,"Rwanda","RWA",59690,6
+2012,"Saudi Arabia","SAU",673,6
+2012,"Senegal","SEN",16562,12
+2012,"Serbia and Kosovo: S/RES/1244 (1999)","SRB",66682,3
+2012,"Sierra Leone","SLE",4269,0
+2012,"Sint Maarten (Dutch part)","SXM",10,0
+2012,"Slovakia","SVK",844,0
+2012,"Slovenia","SVN",262,0
+2012,"Solomon Islands","SLB",5,0
+2012,"Somalia","SOM",10769,325
+2012,"South Africa","ZAF",295645,4
+2012,"South Sudan","SSD",202613,5
+2012,"Spain","ESP",7292,1
+2012,"Sri Lanka","LKA",364,4
+2012,"Sudan","SDN",159853,40
+2012,"Sweden","SWE",115699,2
+2012,"Switzerland","CHE",72403,0
+2012,"Syrian Arab Rep.","SYR",478712,180
+2012,"Tajikistan","TJK",4388,5
+2012,"Thailand","THA",99029,280
+2012,"Togo","TGO",23938,0
+2012,"Trinidad and Tobago","TTO",13,0
+2012,"Tunisia","TUN",1768,3
+2012,"Turkey","TUR",290848,189
+2012,"Turkmenistan","TKM",46,0
+2012,"Turks and Caicos Islands","TCA",21,0
+2012,"Uganda","UGA",225933,4
+2012,"Ukraine","UKR",7852,8
+2012,"United Arab Emirates","ARE",719,0
+2012,"United Kingdom of Great Britain and Northern Ireland","GBR",168686,54
+2012,"United Rep. of Tanzania","TZA",101542,0
+2012,"United States of America","USA",280952,20
+2012,"Uruguay","URY",210,0
+2012,"Uzbekistan","UZB",178,0
+2012,"Venezuela (Bolivarian Republic of)","VEN",204535,1
+2012,"Viet Nam","VNM",0,0
+2012,"Yemen","YEM",243650,312
+2012,"Zambia","ZMB",26837,0
+2012,"Zimbabwe","ZWE",4786,0
+2013,"Afghanistan","AFG",16922,1443
+2013,"Albania","ALB",324,1
+2013,"Algeria","DZA",95937,22
+2013,"Angola","AGO",43802,0
+2013,"Argentina","ARG",4239,2
+2013,"Armenia","ARM",13797,1
+2013,"Aruba","ABW",5,0
+2013,"Australia","AUS",47994,1
+2013,"Austria","AUT",78306,1
+2013,"Azerbaijan","AZE",1645,0
+2013,"Bahamas","BHS",27,1
+2013,"Bahrain","BHR",346,52
+2013,"Bangladesh","BGD",231150,139
+2013,"Belarus","BLR",683,0
+2013,"Belgium","BEL",37096,0
+2013,"Belize","BLZ",83,1
+2013,"Benin","BEN",296,0
+2013,"Bolivia (Plurinational State of)","BOL",739,0
+2013,"Bosnia and Herzegovina","BIH",6958,1
+2013,"Botswana","BWA",2944,0
+2013,"Brazil","BRA",9811,3
+2013,"British Virgin Islands","VGB",5,0
+2013,"Brunei Darussalam","BRN",0,0
+2013,"Bulgaria","BGR",8844,3
+2013,"Burkina Faso","BFA",30019,1
+2013,"Burundi","BDI",51533,2
+2013,"Cambodia","KHM",70,2
+2013,"Cameroon","CMR",123068,3
+2013,"Canada","CAN",182492,4
+2013,"Cayman Islands","CYM",10,0
+2013,"Central African Rep.","CAF",16958,21
+2013,"Chad","TCD",434779,0
+2013,"Chile","CHL",2154,5
+2013,"China","CHN",301419,12
+2013,"China, Hong Kong SAR","HKG",1961,0
+2013,"China, Macao SAR","MAC",5,0
+2013,"Colombia","COL",265,149
+2013,"Congo","COG",53677,1
+2013,"Costa Rica","CRI",21147,0
+2013,"Cote d'Ivoire","CIV",3566,4
+2013,"Croatia","HRV",868,2
+2013,"Cuba","CUB",377,0
+2013,"Curacao ","CUW",58,0
+2013,"Cyprus","CYP",6508,2
+2013,"Czechia","CZE",3258,1
+2013,"Dem. Rep. of the Congo","COD",114810,22
+2013,"Denmark","DNK",14758,1
+2013,"Djibouti","DJI",23802,0
+2013,"Dominican Rep.","DOM",1543,1
+2013,"Ecuador","ECU",134741,2
+2013,"Egypt","EGY",253220,321
+2013,"El Salvador","SLV",47,0
+2013,"Eritrea","ERI",3171,0
+2013,"Estonia","EST",67,0
+2013,"Eswatini","SWZ",1032,0
+2013,"Ethiopia","ETH",434863,5
+2013,"Fiji","FJI",7,0
+2013,"Finland","FIN",12746,0
+2013,"France","FRA",284178,18
+2013,"Gabon","GAB",4020,0
+2013,"Gambia","GMB",9557,0
+2013,"Georgia","GEO",1172,2
+2013,"Germany","DEU",323060,0
+2013,"Ghana","GHA",20519,0
+2013,"Greece","GRC",53268,55
+2013,"Guatemala","GTM",168,6
+2013,"Guinea","GIN",8863,2
+2013,"Guinea-Bissau","GNB",8639,0
+2013,"Guyana","GUY",12,0
+2013,"Haiti","HTI",8,0
+2013,"Honduras","HND",38,2
+2013,"Hungary","HUN",4298,0
+2013,"Iceland","ISL",339,0
+2013,"India","IND",192060,694
+2013,"Indonesia","IDN",10282,32
+2013,"Iran (Islamic Rep. of)","IRN",857398,11
+2013,"Iraq","IRQ",252285,2852
+2013,"Ireland","IRL",11455,27
+2013,"Israel","ISR",52943,37
+2013,"Italy","ITA",89883,7
+2013,"Jamaica","JAM",18,0
+2013,"Japan","JPN",9316,1
+2013,"Jordan","JOR",646287,1
+2013,"Kazakhstan","KAZ",654,4
+2013,"Kenya","KEN",587206,80
+2013,"Kuwait","KWT",1662,0
+2013,"Kyrgyzstan","KGZ",847,0
+2013,"Latvia","LVA",332,0
+2013,"Lebanon","LBN",858796,121
+2013,"Lesotho","LSO",29,0
+2013,"Liberia","LBR",53292,0
+2013,"Libya","LBY",32153,291
+2013,"Liechtenstein","LIE",116,0
+2013,"Lithuania","LTU",992,0
+2013,"Luxembourg","LUX",1904,0
+2013,"Madagascar","MDG",11,2
+2013,"Malawi","MWI",16930,0
+2013,"Malaysia","MYS",140511,13
+2013,"Mali","MLI",14604,58
+2013,"Malta","MLT",10800,0
+2013,"Mauritania","MRT",93606,0
+2013,"Mexico","MEX",3161,8
+2013,"Monaco","MCO",34,0
+2013,"Mongolia","MNG",13,0
+2013,"Montenegro","MNE",8660,2
+2013,"Morocco","MAR",4944,0
+2013,"Mozambique","MOZ",15107,18
+2013,"Myanmar","MMR",0,18
+2013,"Namibia","NAM",3483,0
+2013,"Nauru","NRU",533,0
+2013,"Nepal","NPL",46540,104
+2013,"Netherlands","NLD",74700,0
+2013,"New Zealand","NZL",1679,0
+2013,"Nicaragua","NIC",199,0
+2013,"Niger","NER",57733,4
+2013,"Nigeria","NGA",2500,347
+2013,"North Macedonia","MKD",2071,0
+2013,"Norway","NOR",52399,0
+2013,"Oman","OMN",218,0
+2013,"Pakistan","PAK",1621889,2215
+2013,"Panama","PAN",18274,0
+2013,"Papua New Guinea","PNG",9777,0
+2013,"Paraguay","PRY",132,10
+2013,"Peru","PER",1628,13
+2013,"Philippines","PHL",246,651
+2013,"Poland","POL",18585,0
+2013,"Portugal","PRT",794,0
+2013,"Qatar","QAT",140,0
+2013,"Rep. of Korea","KOR",2935,0
+2013,"Rep. of Moldova","MDA",299,0
+2013,"Romania","ROU",1868,0
+2013,"Russian Federation","RUS",4692,145
+2013,"Rwanda","RWA",73562,4
+2013,"Saint Lucia","LCA",5,0
+2013,"Saudi Arabia","SAU",655,6
+2013,"Senegal","SEN",16715,3
+2013,"Serbia and Kosovo: S/RES/1244 (1999)","SRB",57459,0
+2013,"Sierra Leone","SLE",2852,0
+2013,"Sint Maarten (Dutch part)","SXM",5,0
+2013,"Slovakia","SVK",891,0
+2013,"Slovenia","SVN",207,0
+2013,"Solomon Islands","SLB",5,0
+2013,"Somalia","SOM",12303,342
+2013,"South Africa","ZAF",303207,13
+2013,"South Sudan","SSD",229623,13
+2013,"Spain","ESP",8970,5
+2013,"Sri Lanka","LKA",1748,14
+2013,"Sudan","SDN",170640,46
+2013,"Sweden","SWE",141877,0
+2013,"Switzerland","CHE",74535,2
+2013,"Syrian Arab Rep.","SYR",151766,286
+2013,"Tajikistan","TJK",4320,0
+2013,"Thailand","THA",141174,472
+2013,"Togo","TGO",21039,0
+2013,"Trinidad and Tobago","TTO",48,3
+2013,"Tunisia","TUN",1078,29
+2013,"Turkey","TUR",662379,42
+2013,"Turkmenistan","TKM",45,0
+2013,"Turks and Caicos Islands","TCA",10,0
+2013,"Uganda","UGA",244764,0
+2013,"Ukraine","UKR",8414,5
+2013,"United Arab Emirates","ARE",676,1
+2013,"United Kingdom of Great Britain and Northern Ireland","GBR",151131,136
+2013,"United Rep. of Tanzania","TZA",102506,7
+2013,"United States of America","USA",347970,20
+2013,"Uruguay","URY",228,0
+2013,"Uzbekistan","UZB",143,0
+2013,"Venezuela (Bolivarian Republic of)","VEN",205388,1
+2013,"Viet Nam","VNM",0,0
+2013,"Yemen","YEM",249471,434
+2013,"Zambia","ZMB",25801,0
+2013,"Zimbabwe","ZWE",6866,3
+2014,"Afghanistan","AFG",300480,1824
+2014,"Albania","ALB",593,2
+2014,"Algeria","DZA",98983,13
+2014,"Angola","AGO",45668,0
+2014,"Argentina","ARG",4319,1
+2014,"Armenia","ARM",17692,0
+2014,"Aruba","ABW",5,0
+2014,"Australia","AUS",57027,8
+2014,"Austria","AUT",83469,0
+2014,"Azerbaijan","AZE",1696,3
+2014,"Bahamas","BHS",31,0
+2014,"Bahrain","BHR",354,42
+2014,"Bangladesh","BGD",232482,130
+2014,"Belarus","BLR",1173,0
+2014,"Belgium","BEL",39113,2
+2014,"Belize","BLZ",124,0
+2014,"Benin","BEN",482,0
+2014,"Bolivia (Plurinational State of)","BOL",767,0
+2014,"Bosnia and Herzegovina","BIH",6890,3
+2014,"Botswana","BWA",2837,0
+2014,"Brazil","BRA",18678,3
+2014,"Brunei Darussalam","BRN",0,0
+2014,"Bulgaria","BGR",17761,1
+2014,"Burkina Faso","BFA",32095,0
+2014,"Burundi","BDI",55977,5
+2014,"Cabo Verde","CPV",0,0
+2014,"Cambodia","KHM",97,0
+2014,"Cameroon","CMR",275858,68
+2014,"Canada","CAN",165863,3
+2014,"Cayman Islands","CYM",5,0
+2014,"Central African Rep.","CAF",8100,94
+2014,"Chad","TCD",454690,1
+2014,"Chile","CHL",2335,17
+2014,"China","CHN",301499,37
+2014,"China, Hong Kong SAR","HKG",2383,0
+2014,"China, Macao SAR","MAC",5,0
+2014,"Colombia","COL",352,231
+2014,"Congo","COG",58034,0
+2014,"Costa Rica","CRI",22477,0
+2014,"Cote d'Ivoire","CIV",2578,1
+2014,"Croatia","HRV",811,0
+2014,"Cuba","CUB",282,0
+2014,"Curacao ","CUW",74,0
+2014,"Cyprus","CYP",7556,2
+2014,"Czechia","CZE",3588,5
+2014,"Dem. Rep. of the Congo","COD",120934,110
+2014,"Denmark","DNK",22035,0
+2014,"Djibouti","DJI",24357,1
+2014,"Dominican Rep.","DOM",1351,1
+2014,"Ecuador","ECU",133712,0
+2014,"Egypt","EGY",261688,354
+2014,"El Salvador","SLV",33,0
+2014,"Eritrea","ERI",2898,0
+2014,"Estonia","EST",166,0
+2014,"Eswatini","SWZ",777,0
+2014,"Ethiopia","ETH",663640,2
+2014,"Fiji","FJI",18,0
+2014,"Finland","FIN",13517,0
+2014,"France","FRA",308074,14
+2014,"Gabon","GAB",2891,0
+2014,"Gambia","GMB",11606,0
+2014,"Georgia","GEO",2098,2
+2014,"Germany","DEU",443103,13
+2014,"Ghana","GHA",21082,1
+2014,"Greece","GRC",42190,27
+2014,"Guatemala","GTM",257,0
+2014,"Guinea","GIN",9046,0
+2014,"Guinea-Bissau","GNB",8800,0
+2014,"Guyana","GUY",12,0
+2014,"Honduras","HND",42,1
+2014,"Hungary","HUN",18518,1
+2014,"Iceland","ISL",303,1
+2014,"India","IND",204988,860
+2014,"Indonesia","IDN",11171,35
+2014,"Iran (Islamic Rep. of)","IRN",982067,9
+2014,"Iraq","IRQ",279605,3934
+2014,"Ireland","IRL",10408,33
+2014,"Israel","ISR",45256,293
+2014,"Italy","ITA",139442,7
+2014,"Jamaica","JAM",23,1
+2014,"Japan","JPN",11846,5
+2014,"Jordan","JOR",672907,3
+2014,"Kazakhstan","KAZ",720,0
+2014,"Kenya","KEN",585345,115
+2014,"Kuwait","KWT",1650,0
+2014,"Kyrgyzstan","KGZ",694,2
+2014,"Latvia","LVA",403,0
+2014,"Lebanon","LBN",1161464,205
+2014,"Lesotho","LSO",43,0
+2014,"Liberia","LBR",38620,1
+2014,"Libya","LBY",36850,729
+2014,"Liechtenstein","LIE",168,0
+2014,"Lithuania","LTU",1146,0
+2014,"Luxembourg","LUX",2317,0
+2014,"Madagascar","MDG",16,1
+2014,"Malawi","MWI",20364,0
+2014,"Malaysia","MYS",150590,12
+2014,"Mali","MLI",15826,69
+2014,"Malta","MLT",6271,1
+2014,"Mauritania","MRT",76046,0
+2014,"Mexico","MEX",4682,5
+2014,"Monaco","MCO",33,0
+2014,"Mongolia","MNG",10,0
+2014,"Montenegro","MNE",6525,0
+2014,"Morocco","MAR",3033,0
+2014,"Mozambique","MOZ",17850,22
+2014,"Myanmar","MMR",0,16
+2014,"Namibia","NAM",2581,0
+2014,"Nauru","NRU",1116,0
+2014,"Nepal","NPL",38624,7
+2014,"Netherlands","NLD",89397,1
+2014,"New Zealand","NZL",1582,1
+2014,"Nicaragua","NIC",330,2
+2014,"Niger","NER",77929,5
+2014,"Nigeria","NGA",2085,713
+2014,"North Macedonia","MKD",2427,3
+2014,"Norway","NOR",54173,0
+2014,"Oman","OMN",382,0
+2014,"Pakistan","PAK",1511045,2149
+2014,"Panama","PAN",18651,0
+2014,"Papua New Guinea","PNG",9901,0
+2014,"Paraguay","PRY",158,15
+2014,"Peru","PER",1649,12
+2014,"Philippines","PHL",304,597
+2014,"Poland","POL",18405,0
+2014,"Portugal","PRT",1031,0
+2014,"Qatar","QAT",218,0
+2014,"Rep. of Korea","KOR",4634,0
+2014,"Rep. of Moldova","MDA",453,0
+2014,"Romania","ROU",2496,0
+2014,"Russian Federation","RUS",238783,48
+2014,"Rwanda","RWA",74040,2
+2014,"Saudi Arabia","SAU",658,14
+2014,"Senegal","SEN",17178,2
+2014,"Serbia and Kosovo: S/RES/1244 (1999)","SRB",44187,0
+2014,"Sierra Leone","SLE",1383,0
+2014,"Singapore","SGP",5,0
+2014,"Sint Maarten (Dutch part)","SXM",10,0
+2014,"Slovakia","SVK",1011,0
+2014,"Slovenia","SVN",312,0
+2014,"Solomon Islands","SLB",5,0
+2014,"Somalia","SOM",11994,872
+2014,"South Africa","ZAF",576091,20
+2014,"South Sudan","SSD",248280,40
+2014,"Spain","ESP",13305,4
+2014,"Sri Lanka","LKA",1453,16
+2014,"Sudan","SDN",288012,157
+2014,"Sweden","SWE",198945,5
+2014,"Switzerland","CHE",83401,0
+2014,"Syrian Arab Rep.","SYR",151882,333
+2014,"Tajikistan","TJK",2150,1
+2014,"Thailand","THA",138144,423
+2014,"Timor-Leste","TLS",0,0
+2014,"Togo","TGO",22483,0
+2014,"Trinidad and Tobago","TTO",156,0
+2014,"Tunisia","TUN",1118,23
+2014,"Turkey","TUR",1693722,95
+2014,"Turkmenistan","TKM",34,1
+2014,"Turks and Caicos Islands","TCA",10,0
+2014,"Uganda","UGA",420971,6
+2014,"Ukraine","UKR",9095,896
+2014,"United Arab Emirates","ARE",631,2
+2014,"United Kingdom of Great Britain and Northern Ireland","GBR",153580,104
+2014,"United Rep. of Tanzania","TZA",89375,11
+2014,"United States of America","USA",455029,29
+2014,"Uruguay","URY",305,0
+2014,"Uzbekistan","UZB",123,0
+2014,"Venezuela (Bolivarian Republic of)","VEN",174001,4
+2014,"Viet Nam","VNM",0,0
+2014,"Yemen","YEM",266304,814
+2014,"Zambia","ZMB",27740,0
+2014,"Zimbabwe","ZWE",6718,1
+2015,"Afghanistan","AFG",257631,1928
+2015,"Albania","ALB",939,4
+2015,"Algeria","DZA",100749,15
+2015,"Angola","AGO",45678,0
+2015,"Antigua and Barbuda","ATG",15,0
+2015,"Argentina","ARG",4249,1
+2015,"Armenia","ARM",19365,2
+2015,"Australia","AUS",57669,12
+2015,"Austria","AUT",152258,0
+2015,"Azerbaijan","AZE",1494,0
+2015,"Bahamas","BHS",27,0
+2015,"Bahrain","BHR",359,18
+2015,"Bangladesh","BGD",231954,469
+2015,"Belarus","BLR",2078,0
+2015,"Belgium","BEL",71298,0
+2015,"Belize","BLZ",750,0
+2015,"Benin","BEN",702,0
+2015,"Bolivia (Plurinational State of)","BOL",762,0
+2015,"Bosnia and Herzegovina","BIH",6809,6
+2015,"Botswana","BWA",2260,0
+2015,"Brazil","BRA",29501,5
+2015,"Brunei Darussalam","BRN",0,0
+2015,"Bulgaria","BGR",26031,2
+2015,"Burkina Faso","BFA",34158,6
+2015,"Burundi","BDI",56286,102
+2015,"Cabo Verde","CPV",0,0
+2015,"Cambodia","KHM",98,0
+2015,"Cameroon","CMR",348326,83
+2015,"Canada","CAN",155521,5
+2015,"Cayman Islands","CYM",15,0
+2015,"Central African Rep.","CAF",7664,49
+2015,"Chad","TCD",372428,27
+2015,"Chile","CHL",2895,1
+2015,"China","CHN",301716,17
+2015,"China, Hong Kong SAR","HKG",2407,0
+2015,"China, Macao SAR","MAC",5,0
+2015,"Colombia","COL",317,136
+2015,"Congo","COG",49292,0
+2015,"Costa Rica","CRI",6862,0
+2015,"Cote d'Ivoire","CIV",2616,4
+2015,"Croatia","HRV",548,0
+2015,"Cuba","CUB",323,0
+2015,"Curacao ","CUW",80,0
+2015,"Cyprus","CYP",9272,0
+2015,"Czechia","CZE",4294,4
+2015,"Dem. Rep. of the Congo","COD",384073,143
+2015,"Denmark","DNK",30243,5
+2015,"Djibouti","DJI",22008,1
+2015,"Dominican Rep.","DOM",1365,0
+2015,"Ecuador","ECU",133094,1
+2015,"Egypt","EGY",250627,647
+2015,"El Salvador","SLV",46,0
+2015,"Eritrea","ERI",2549,0
+2015,"Estonia","EST",231,1
+2015,"Eswatini","SWZ",957,0
+2015,"Ethiopia","ETH",738207,7
+2015,"Fiji","FJI",13,0
+2015,"Finland","FIN",37032,9
+2015,"France","FRA",336160,38
+2015,"Gabon","GAB",2876,0
+2015,"Gambia","GMB",7851,0
+2015,"Georgia","GEO",2693,1
+2015,"Germany","DEU",736668,66
+2015,"Ghana","GHA",19254,0
+2015,"Greece","GRC",50953,30
+2015,"Guatemala","GTM",345,0
+2015,"Guinea","GIN",9034,2
+2015,"Guinea-Bissau","GNB",8800,0
+2015,"Guyana","GUY",12,0
+2015,"Haiti","HTI",10,0
+2015,"Honduras","HND",38,0
+2015,"Hungary","HUN",41054,1
+2015,"Iceland","ISL",329,0
+2015,"India","IND",207855,885
+2015,"Indonesia","IDN",13520,29
+2015,"Iran (Islamic Rep. of)","IRN",979477,9
+2015,"Iraq","IRQ",285116,2751
+2015,"Ireland","IRL",11090,28
+2015,"Israel","ISR",44606,58
+2015,"Italy","ITA",178171,5
+2015,"Jamaica","JAM",13,0
+2015,"Japan","JPN",16302,10
+2015,"Jordan","JOR",689016,4
+2015,"Kazakhstan","KAZ",790,0
+2015,"Kenya","KEN",593860,70
+2015,"Kuwait","KWT",1639,1
+2015,"Kyrgyzstan","KGZ",509,3
+2015,"Latvia","LVA",375,0
+2015,"Lebanon","LBN",1082958,44
+2015,"Lesotho","LSO",31,1
+2015,"Liberia","LBR",36506,0
+2015,"Libya","LBY",36768,543
+2015,"Liechtenstein","LIE",233,0
+2015,"Lithuania","LTU",1169,0
+2015,"Luxembourg","LUX",3655,0
+2015,"Madagascar","MDG",16,0
+2015,"Malawi","MWI",23485,0
+2015,"Malaysia","MYS",154554,5
+2015,"Mali","MLI",16249,121
+2015,"Malta","MLT",7642,1
+2015,"Mauritania","MRT",77882,0
+2015,"Mexico","MEX",4248,19
+2015,"Micronesia (Federated States of)","FSM",15,0
+2015,"Monaco","MCO",32,0
+2015,"Mongolia","MNG",16,0
+2015,"Montenegro","MNE",1780,1
+2015,"Morocco","MAR",5433,1
+2015,"Mozambique","MOZ",20443,8
+2015,"Myanmar","MMR",0,37
+2015,"Namibia","NAM",2832,0
+2015,"Nauru","NRU",817,0
+2015,"Nepal","NPL",32687,48
+2015,"Netherlands","NLD",116548,3
+2015,"New Zealand","NZL",1452,0
+2015,"Nicaragua","NIC",451,0
+2015,"Niger","NER",124820,41
+2015,"Nigeria","NGA",1772,641
+2015,"North Macedonia","MKD",712,4
+2015,"Norway","NOR",75651,0
+2015,"Oman","OMN",434,0
+2015,"Pakistan","PAK",1567594,1243
+2015,"Panama","PAN",20233,0
+2015,"Papua New Guinea","PNG",9951,0
+2015,"Paraguay","PRY",194,19
+2015,"Peru","PER",1804,10
+2015,"Philippines","PHL",439,721
+2015,"Poland","POL",17338,0
+2015,"Portugal","PRT",1422,0
+2015,"Qatar","QAT",233,1
+2015,"Rep. of Korea","KOR",6881,1
+2015,"Rep. of Moldova","MDA",528,0
+2015,"Romania","ROU",2989,0
+2015,"Russian Federation","RUS",316545,22
+2015,"Rwanda","RWA",145145,0
+2015,"Samoa","WSM",5,0
+2015,"Saudi Arabia","SAU",155,104
+2015,"Senegal","SEN",17499,2
+2015,"Serbia and Kosovo: S/RES/1244 (1999)","SRB",35434,0
+2015,"Sierra Leone","SLE",772,0
+2015,"Sint Maarten (Dutch part)","SXM",15,0
+2015,"Slovakia","SVK",989,0
+2015,"Slovenia","SVN",376,0
+2015,"Solomon Islands","SLB",5,0
+2015,"Somalia","SOM",18196,422
+2015,"South Africa","ZAF",1217656,5
+2015,"South Sudan","SSD",263847,54
+2015,"Spain","ESP",17470,1
+2015,"Sri Lanka","LKA",1383,11
+2015,"Sudan","SDN",322214,158
+2015,"Sweden","SWE",326533,35
+2015,"Switzerland","CHE",106017,0
+2015,"Syrian Arab Rep.","SYR",26360,491
+2015,"Tajikistan","TJK",2249,3
+2015,"Thailand","THA",116500,278
+2015,"Timor-Leste","TLS",0,0
+2015,"Togo","TGO",22694,0
+2015,"Trinidad and Tobago","TTO",192,1
+2015,"Tunisia","TUN",739,19
+2015,"Turkey","TUR",2753716,425
+2015,"Turkmenistan","TKM",25,0
+2015,"Turks and Caicos Islands","TCA",5,0
+2015,"Uganda","UGA",512955,10
+2015,"Ukraine","UKR",9740,638
+2015,"United Arab Emirates","ARE",1085,0
+2015,"United Kingdom of Great Britain and Northern Ireland","GBR",168904,114
+2015,"United Rep. of Tanzania","TZA",213995,14
+2015,"United States of America","USA",559375,39
+2015,"Uruguay","URY",361,0
+2015,"Uzbekistan","UZB",106,1
+2015,"Venezuela (Bolivarian Republic of)","VEN",173962,3
+2015,"Viet Nam","VNM",0,0
+2015,"Yemen","YEM",277020,818
+2015,"Zambia","ZMB",28842,0
+2015,"Zimbabwe","ZWE",7200,0
+2016,"Afghanistan","AFG",59893,1616
+2016,"Albania","ALB",2891,2
+2016,"Algeria","DZA",99920,9
+2016,"Angola","AGO",45678,2
+2016,"Antigua and Barbuda","ATG",5,0
+2016,"Argentina","ARG",7184,2
+2016,"Armenia","ARM",17956,2
+2016,"Aruba","ABW",5,0
+2016,"Australia","AUS",71820,9
+2016,"Austria","AUT",169624,3
+2016,"Azerbaijan","AZE",1448,2
+2016,"Bahamas","BHS",26,0
+2016,"Bahrain","BHR",381,3
+2016,"Bangladesh","BGD",276203,89
+2016,"Belarus","BLR",1875,0
+2016,"Belgium","BEL",66256,6
+2016,"Belize","BLZ",2427,0
+2016,"Benin","BEN",1028,0
+2016,"Bolivia (Plurinational State of)","BOL",776,0
+2016,"Bosnia and Herzegovina","BIH",5317,0
+2016,"Botswana","BWA",2168,0
+2016,"Brazil","BRA",45125,2
+2016,"Brunei Darussalam","BRN",0,0
+2016,"Bulgaria","BGR",33824,1
+2016,"Burkina Faso","BFA",32677,10
+2016,"Burundi","BDI",61070,83
+2016,"Cabo Verde","CPV",0,0
+2016,"Cambodia","KHM",231,0
+2016,"Cameroon","CMR",378650,58
+2016,"Canada","CAN",121268,6
+2016,"Cayman Islands","CYM",42,0
+2016,"Central African Rep.","CAF",12427,38
+2016,"Chad","TCD",393143,5
+2016,"Chile","CHL",4948,18
+2016,"China","CHN",317901,5
+2016,"China, Hong Kong SAR","HKG",91,0
+2016,"China, Macao SAR","MAC",5,0
+2016,"Colombia","COL",609,110
+2016,"Congo","COG",53126,15
+2016,"Costa Rica","CRI",7788,0
+2016,"Cote d'Ivoire","CIV",1673,1
+2016,"Croatia","HRV",829,0
+2016,"Cuba","CUB",340,0
+2016,"Curacao ","CUW",108,0
+2016,"Cyprus","CYP",11527,2
+2016,"Czechia","CZE",4409,2
+2016,"Dem. Rep. of the Congo","COD",453281,169
+2016,"Denmark","DNK",40502,1
+2016,"Djibouti","DJI",25741,0
+2016,"Dominican Rep.","DOM",1380,0
+2016,"Ecuador","ECU",127390,6
+2016,"Egypt","EGY",263359,376
+2016,"El Salvador","SLV",41,0
+2016,"Eritrea","ERI",2350,0
+2016,"Estonia","EST",355,0
+2016,"Eswatini","SWZ",1102,0
+2016,"Ethiopia","ETH",793579,13
+2016,"Fiji","FJI",7,0
+2016,"Finland","FIN",23961,3
+2016,"France","FRA",367291,25
+2016,"Gabon","GAB",2837,0
+2016,"Gambia","GMB",7936,0
+2016,"Georgia","GEO",2427,4
+2016,"Germany","DEU",1256774,45
+2016,"Ghana","GHA",13231,1
+2016,"Greece","GRC",86371,30
+2016,"Guatemala","GTM",295,0
+2016,"Guinea","GIN",5171,1
+2016,"Guinea-Bissau","GNB",9293,0
+2016,"Guyana","GUY",12,1
+2016,"Haiti","HTI",5,1
+2016,"Honduras","HND",26,1
+2016,"Hungary","HUN",8132,1
+2016,"Iceland","ISL",569,0
+2016,"India","IND",207057,1026
+2016,"Indonesia","IDN",14382,19
+2016,"Iran (Islamic Rep. of)","IRN",979526,10
+2016,"Iraq","IRQ",273351,3395
+2016,"Ireland","IRL",9941,15
+2016,"Israel","ISR",51803,50
+2016,"Italy","ITA",247258,11
+2016,"Jamaica","JAM",21,0
+2016,"Japan","JPN",21313,1
+2016,"Jordan","JOR",720788,11
+2016,"Kazakhstan","KAZ",780,3
+2016,"Kenya","KEN",494845,65
+2016,"Kuwait","KWT",1758,2
+2016,"Kyrgyzstan","KGZ",454,4
+2016,"Latvia","LVA",491,0
+2016,"Lebanon","LBN",1026683,41
+2016,"Lesotho","LSO",51,0
+2016,"Liberia","LBR",18992,0
+2016,"Libya","LBY",38532,422
+2016,"Liechtenstein","LIE",239,0
+2016,"Lithuania","LTU",1431,0
+2016,"Luxembourg","LUX",4206,0
+2016,"Madagascar","MDG",49,1
+2016,"Malawi","MWI",30408,0
+2016,"Malaysia","MYS",148572,19
+2016,"Mali","MLI",17809,100
+2016,"Malta","MLT",8809,0
+2016,"Mauritania","MRT",74720,0
+2016,"Mauritius","MUS",5,0
+2016,"Mexico","MEX",8814,5
+2016,"Micronesia (Federated States of)","FSM",5,0
+2016,"Monaco","MCO",27,0
+2016,"Mongolia","MNG",10,0
+2016,"Montenegro","MNE",1043,0
+2016,"Morocco","MAR",6705,0
+2016,"Mozambique","MOZ",17639,79
+2016,"Myanmar","MMR",0,74
+2016,"Namibia","NAM",3411,0
+2016,"Nauru","NRU",817,0
+2016,"Nepal","NPL",25320,43
+2016,"Netherlands","NLD",112096,6
+2016,"New Zealand","NZL",1706,1
+2016,"Nicaragua","NIC",663,0
+2016,"Niger","NER",166150,25
+2016,"Nigeria","NGA",1821,535
+2016,"North Macedonia","MKD",649,0
+2016,"Norway","NOR",67017,0
+2016,"Oman","OMN",681,0
+2016,"Pakistan","PAK",1357405,864
+2016,"Panama","PAN",21797,1
+2016,"Papua New Guinea","PNG",9545,0
+2016,"Paraguay","PRY",230,15
+2016,"Peru","PER",5983,4
+2016,"Philippines","PHL",597,632
+2016,"Poland","POL",15150,2
+2016,"Portugal","PRT",2039,0
+2016,"Qatar","QAT",319,0
+2016,"Rep. of Korea","KOR",8633,1
+2016,"Rep. of Moldova","MDA",494,1
+2016,"Romania","ROU",2952,0
+2016,"Russian Federation","RUS",232006,56
+2016,"Rwanda","RWA",156521,1
+2016,"Samoa","WSM",5,0
+2016,"Saudi Arabia","SAU",187,134
+2016,"Senegal","SEN",17788,0
+2016,"Serbia and Kosovo: S/RES/1244 (1999)","SRB",36640,0
+2016,"Sierra Leone","SLE",688,1
+2016,"Sint Maarten (Dutch part)","SXM",10,0
+2016,"Slovakia","SVK",1018,1
+2016,"Slovenia","SVN",763,0
+2016,"Somalia","SOM",24371,602
+2016,"South Africa","ZAF",309293,27
+2016,"South Sudan","SSD",264348,59
+2016,"Spain","ESP",33343,3
+2016,"Sri Lanka","LKA",1175,1
+2016,"Sudan","SDN",437515,173
+2016,"Suriname","SUR",43,0
+2016,"Sweden","SWE",313198,16
+2016,"Switzerland","CHE",113446,2
+2016,"Syrian Arab Rep.","SYR",32291,474
+2016,"Tajikistan","TJK",3155,2
+2016,"Thailand","THA",111417,329
+2016,"Togo","TGO",13263,0
+2016,"Trinidad and Tobago","TTO",306,0
+2016,"Tunisia","TUN",676,12
+2016,"Turkey","TUR",3115345,544
+2016,"Turkmenistan","TKM",26,0
+2016,"Turks and Caicos Islands","TCA",5,0
+2016,"Uganda","UGA",982697,15
+2016,"Ukraine","UKR",9828,62
+2016,"United Arab Emirates","ARE",1493,0
+2016,"United Kingdom of Great Britain and Northern Ireland","GBR",162469,104
+2016,"United Rep. of Tanzania","TZA",290037,3
+2016,"United States of America","USA",712827,68
+2016,"Uruguay","URY",651,1
+2016,"Uzbekistan","UZB",26,0
+2016,"Venezuela (Bolivarian Republic of)","VEN",172947,6
+2016,"Viet Nam","VNM",0,0
+2016,"Yemen","YEM",278866,917
+2016,"Zambia","ZMB",32656,0
+2016,"Zimbabwe","ZWE",8371,0
+2017,"Afghanistan","AFG",76142,1415
+2017,"Albania","ALB",156,1
+2017,"Algeria","DZA",100601,14
+2017,"Angola","AGO",71250,6
+2017,"Argentina","ARG",7443,3
+2017,"Armenia","ARM",18030,0
+2017,"Aruba","ABW",147,0
+2017,"Australia","AUS",96509,4
+2017,"Austria","AUT",171531,1
+2017,"Azerbaijan","AZE",1244,2
+2017,"Bahamas","BHS",23,0
+2017,"Bahrain","BHR",366,21
+2017,"Bangladesh","BGD",932324,41
+2017,"Belarus","BLR",2428,0
+2017,"Belgium","BEL",60918,3
+2017,"Belize","BLZ",3120,0
+2017,"Benin","BEN",1318,0
+2017,"Bolivia (Plurinational State of)","BOL",836,0
+2017,"Bosnia and Herzegovina","BIH",5447,0
+2017,"Botswana","BWA",2181,0
+2017,"Brazil","BRA",95999,2
+2017,"Brunei Darussalam","BRN",0,0
+2017,"Bulgaria","BGR",21878,0
+2017,"Burkina Faso","BFA",24195,32
+2017,"Burundi","BDI",65904,21
+2017,"Cabo Verde","CPV",0,0
+2017,"Cambodia","KHM",105,0
+2017,"Cameroon","CMR",343147,111
+2017,"Canada","CAN",156627,16
+2017,"Cayman Islands","CYM",57,0
+2017,"Central African Rep.","CAF",10604,43
+2017,"Chad","TCD",412135,6
+2017,"Chile","CHL",10323,17
+2017,"China","CHN",322405,6
+2017,"China, Hong Kong SAR","HKG",90,0
+2017,"China, Macao SAR","MAC",5,0
+2017,"Colombia","COL",785,119
+2017,"Congo","COG",55601,0
+2017,"Costa Rica","CRI",11907,0
+2017,"Cote d'Ivoire","CIV",1927,13
+2017,"Croatia","HRV",914,0
+2017,"Cuba","CUB",358,0
+2017,"Curacao ","CUW",803,0
+2017,"Cyprus","CYP",15006,0
+2017,"Czechia","CZE",4439,3
+2017,"Dem. Rep. of the Congo","COD",537896,143
+2017,"Denmark","DNK",39897,0
+2017,"Djibouti","DJI",26910,1
+2017,"Dominican Rep.","DOM",1444,1
+2017,"Ecuador","ECU",104300,3
+2017,"Egypt","EGY",289204,225
+2017,"El Salvador","SLV",45,0
+2017,"Eritrea","ERI",2392,0
+2017,"Estonia","EST",441,0
+2017,"Eswatini","SWZ",1334,0
+2017,"Ethiopia","ETH",892005,28
+2017,"Fiji","FJI",17,0
+2017,"Finland","FIN",23894,2
+2017,"France","FRA",400273,42
+2017,"Gabon","GAB",850,4
+2017,"Gambia","GMB",8044,0
+2017,"Georgia","GEO",2619,1
+2017,"Germany","DEU",1399622,27
+2017,"Ghana","GHA",13456,0
+2017,"Greece","GRC",83176,44
+2017,"Guatemala","GTM",388,0
+2017,"Guinea","GIN",5264,0
+2017,"Guinea-Bissau","GNB",11218,0
+2017,"Guyana","GUY",17,0
+2017,"Haiti","HTI",5,0
+2017,"Honduras","HND",38,1
+2017,"Hungary","HUN",6337,0
+2017,"Iceland","ISL",688,0
+2017,"India","IND",207650,967
+2017,"Indonesia","IDN",13798,27
+2017,"Iran (Islamic Rep. of)","IRN",979519,11
+2017,"Iraq","IRQ",290703,2548
+2017,"Ireland","IRL",12385,17
+2017,"Israel","ISR",55361,34
+2017,"Italy","ITA",353975,10
+2017,"Jamaica","JAM",21,2
+2017,"Japan","JPN",33393,0
+2017,"Jordan","JOR",734824,8
+2017,"Kazakhstan","KAZ",809,0
+2017,"Kenya","KEN",488394,97
+2017,"Kuwait","KWT",1561,0
+2017,"Kyrgyzstan","KGZ",441,3
+2017,"Latvia","LVA",707,1
+2017,"Lebanon","LBN",1014197,23
+2017,"Lesotho","LSO",83,0
+2017,"Liberia","LBR",11139,1
+2017,"Libya","LBY",45002,191
+2017,"Liechtenstein","LIE",243,0
+2017,"Lithuania","LTU",1826,0
+2017,"Luxembourg","LUX",3515,0
+2017,"Madagascar","MDG",96,0
+2017,"Malawi","MWI",34964,1
+2017,"Malaysia","MYS",151346,4
+2017,"Mali","MLI",17590,142
+2017,"Malta","MLT",9343,3
+2017,"Mauritania","MRT",78171,0
+2017,"Mauritius","MUS",5,0
+2017,"Mexico","MEX",19350,20
+2017,"Monaco","MCO",25,0
+2017,"Mongolia","MNG",10,0
+2017,"Montenegro","MNE",967,0
+2017,"Morocco","MAR",6753,0
+2017,"Mozambique","MOZ",23671,15
+2017,"Myanmar","MMR",0,116
+2017,"Namibia","NAM",4071,0
+2017,"Nauru","NRU",1090,0
+2017,"Nepal","NPL",21615,247
+2017,"Netherlands","NLD",109661,1
+2017,"New Zealand","NZL",1856,0
+2017,"Nicaragua","NIC",729,0
+2017,"Niger","NER",166007,13
+2017,"Nigeria","NGA",10560,488
+2017,"North Macedonia","MKD",440,1
+2017,"Norway","NOR",62182,1
+2017,"Oman","OMN",706,0
+2017,"Pakistan","PAK",1396619,719
+2017,"Panama","PAN",9706,0
+2017,"Papua New Guinea","PNG",10018,8
+2017,"Paraguay","PRY",269,10
+2017,"Peru","PER",39516,8
+2017,"Philippines","PHL",722,695
+2017,"Poland","POL",15103,1
+2017,"Portugal","PRT",1664,0
+2017,"Qatar","QAT",311,0
+2017,"Rep. of Korea","KOR",11797,0
+2017,"Rep. of Moldova","MDA",452,0
+2017,"Romania","ROU",5425,0
+2017,"Russian Federation","RUS",128189,34
+2017,"Rwanda","RWA",171429,2
+2017,"Saint Kitts and Nevis","KNA",5,0
+2017,"Samoa","WSM",5,0
+2017,"Saudi Arabia","SAU",235,57
+2017,"Senegal","SEN",18014,0
+2017,"Serbia and Kosovo: S/RES/1244 (1999)","SRB",32343,1
+2017,"Sierra Leone","SLE",678,3
+2017,"Sint Maarten (Dutch part)","SXM",5,0
+2017,"Slovakia","SVK",938,0
+2017,"Slovenia","SVN",875,0
+2017,"Somalia","SOM",29271,617
+2017,"South Africa","ZAF",280027,29
+2017,"South Sudan","SSD",285300,54
+2017,"Spain","ESP",52407,4
+2017,"Sri Lanka","LKA",1449,41
+2017,"Sudan","SDN",924802,106
+2017,"Suriname","SUR",101,0
+2017,"Sweden","SWE",292542,18
+2017,"Switzerland","CHE",116758,0
+2017,"Syrian Arab Rep.","SYR",37523,250
+2017,"Tajikistan","TJK",2961,2
+2017,"Thailand","THA",106651,179
+2017,"Togo","TGO",13169,0
+2017,"Trinidad and Tobago","TTO",2257,0
+2017,"Tunisia","TUN",762,4
+2017,"Turkey","TUR",3789188,181
+2017,"Turkmenistan","TKM",22,0
+2017,"Turks and Caicos Islands","TCA",5,0
+2017,"Uganda","UGA",1395130,13
+2017,"Ukraine","UKR",9451,62
+2017,"United Arab Emirates","ARE",2766,0
+2017,"United Kingdom of Great Britain and Northern Ireland","GBR",162175,123
+2017,"United Rep. of Tanzania","TZA",352700,6
+2017,"United States of America","USA",929854,66
+2017,"Uruguay","URY",2423,0
+2017,"Uzbekistan","UZB",20,0
+2017,"Venezuela (Bolivarian Republic of)","VEN",123708,17
+2017,"Viet Nam","VNM",0,2
+2017,"Yemen","YEM",280676,530
+2017,"Zambia","ZMB",45941,2
+2017,"Zimbabwe","ZWE",15958,3
+2018,"Afghanistan","AFG",72509,1776
+2018,"Albania","ALB",291,0
+2018,"Algeria","DZA",103251,7
+2018,"Angola","AGO",69984,0
+2018,"Argentina","ARG",136696,5
+2018,"Armenia","ARM",18071,1
+2018,"Aruba","ABW",16009,0
+2018,"Australia","AUS",117579,3
+2018,"Austria","AUT",166126,1
+2018,"Azerbaijan","AZE",1339,1
+2018,"Bahamas","BHS",38,0
+2018,"Bahrain","BHR",320,1
+2018,"Bangladesh","BGD",906679,33
+2018,"Barbados","BRB",5,0
+2018,"Belarus","BLR",2409,0
+2018,"Belgium","BEL",61708,3
+2018,"Belize","BLZ",3334,0
+2018,"Benin","BEN",1475,0
+2018,"Bolivia (Plurinational State of)","BOL",836,2
+2018,"Bosnia and Herzegovina","BIH",6230,2
+2018,"Botswana","BWA",2312,0
+2018,"Brazil","BRA",203745,11
+2018,"Brunei Darussalam","BRN",0,0
+2018,"Bulgaria","BGR",21466,1
+2018,"Burkina Faso","BFA",25160,72
+2018,"Burundi","BDI",77159,10
+2018,"Cabo Verde","CPV",0,0
+2018,"Cambodia","KHM",0,1
+2018,"Cameroon","CMR",388419,236
+2018,"Canada","CAN",192867,7
+2018,"Cayman Islands","CYM",61,0
+2018,"Central African Rep.","CAF",7049,46
+2018,"Chad","TCD",454670,12
+2018,"Chile","CHL",299141,47
+2018,"China","CHN",322341,1
+2018,"China, Hong Kong SAR","HKG",128,0
+2018,"Colombia","COL",1174697,205
+2018,"Congo","COG",46667,0
+2018,"Costa Rica","CRI",37126,0
+2018,"Cote d'Ivoire","CIV",2006,2
+2018,"Croatia","HRV",985,0
+2018,"Cuba","CUB",311,0
+2018,"Curacao ","CUW",26127,0
+2018,"Cyprus","CYP",21269,0
+2018,"Czechia","CZE",4096,0
+2018,"Dem. Rep. of the Congo","COD",534835,163
+2018,"Denmark","DNK",39298,1
+2018,"Djibouti","DJI",28772,0
+2018,"Dominican Rep.","DOM",26919,0
+2018,"Ecuador","ECU",374859,11
+2018,"Egypt","EGY",314914,54
+2018,"El Salvador","SLV",60,0
+2018,"Eritrea","ERI",2252,0
+2018,"Estonia","EST",349,0
+2018,"Eswatini","SWZ",1613,0
+2018,"Ethiopia","ETH",905362,10
+2018,"Fiji","FJI",17,0
+2018,"Finland","FIN",25551,1
+2018,"France","FRA",457400,13
+2018,"Gabon","GAB",768,0
+2018,"Gambia","GMB",4376,0
+2018,"Georgia","GEO",2664,1
+2018,"Germany","DEU",1433074,22
+2018,"Ghana","GHA",13208,2
+2018,"Greece","GRC",137503,26
+2018,"Guatemala","GTM",631,2
+2018,"Guinea","GIN",5872,2
+2018,"Guinea-Bissau","GNB",4874,0
+2018,"Guyana","GUY",36437,0
+2018,"Haiti","HTI",5,5
+2018,"Honduras","HND",83,0
+2018,"Hungary","HUN",6139,0
+2018,"Iceland","ISL",986,0
+2018,"India","IND",207825,888
+2018,"Indonesia","IDN",13982,43
+2018,"Iran (Islamic Rep. of)","IRN",979468,13
+2018,"Iraq","IRQ",297031,1364
+2018,"Ireland","IRL",13171,5
+2018,"Israel","ISR",54123,63
+2018,"Italy","ITA",294833,15
+2018,"Jamaica","JAM",34,0
+2018,"Japan","JPN",30933,1
+2018,"Jordan","JOR",767834,2
+2018,"Kazakhstan","KAZ",758,0
+2018,"Kenya","KEN",471701,52
+2018,"Kuwait","KWT",1654,0
+2018,"Kyrgyzstan","KGZ",434,1
+2018,"Latvia","LVA",709,0
+2018,"Lebanon","LBN",966057,8
+2018,"Lesotho","LSO",92,0
+2018,"Liberia","LBR",9143,0
+2018,"Libya","LBY",56195,167
+2018,"Liechtenstein","LIE",236,0
+2018,"Lithuania","LTU",2004,1
+2018,"Luxembourg","LUX",3505,0
+2018,"Madagascar","MDG",129,0
+2018,"Malawi","MWI",36918,2
+2018,"Malaysia","MYS",163106,7
+2018,"Mali","MLI",27455,164
+2018,"Malta","MLT",10439,0
+2018,"Mauritania","MRT",84310,1
+2018,"Mauritius","MUS",16,0
+2018,"Mexico","MEX",82467,27
+2018,"Monaco","MCO",25,0
+2018,"Mongolia","MNG",5,0
+2018,"Montenegro","MNE",889,3
+2018,"Morocco","MAR",7761,1
+2018,"Mozambique","MOZ",26043,65
+2018,"Myanmar","MMR",0,40
+2018,"Namibia","NAM",3910,0
+2018,"Nauru","NRU",1380,0
+2018,"Nepal","NPL",20855,99
+2018,"Netherlands","NLD",114127,6
+2018,"New Zealand","NZL",1991,0
+2018,"Nicaragua","NIC",447,7
+2018,"Niger","NER",178960,19
+2018,"Nigeria","NGA",35667,648
+2018,"North Macedonia","MKD",418,0
+2018,"Norway","NOR",59250,0
+2018,"Oman","OMN",564,0
+2018,"Pakistan","PAK",1409178,480
+2018,"Panama","PAN",110503,0
+2018,"Papua New Guinea","PNG",10173,0
+2018,"Paraguay","PRY",1413,4
+2018,"Peru","PER",661565,5
+2018,"Philippines","PHL",869,600
+2018,"Poland","POL",15554,1
+2018,"Portugal","PRT",2215,0
+2018,"Qatar","QAT",280,0
+2018,"Rep. of Korea","KOR",22717,1
+2018,"Rep. of Moldova","MDA",502,0
+2018,"Romania","ROU",5610,0
+2018,"Russian Federation","RUS",78743,23
+2018,"Rwanda","RWA",145782,5
+2018,"Saint Kitts and Nevis","KNA",5,0
+2018,"Samoa","WSM",5,0
+2018,"Saudi Arabia","SAU",2430,94
+2018,"Senegal","SEN",16058,3
+2018,"Serbia and Kosovo: S/RES/1244 (1999)","SRB",31163,2
+2018,"Sierra Leone","SLE",591,0
+2018,"Singapore","SGP",0,0
+2018,"Sint Maarten (Dutch part)","SXM",5,0
+2018,"Slovakia","SVK",955,1
+2018,"Slovenia","SVN",991,0
+2018,"Solomon Islands","SLB",5,0
+2018,"Somalia","SOM",33099,527
+2018,"South Africa","ZAF",273478,41
+2018,"South Sudan","SSD",294373,69
+2018,"Spain","ESP",99122,2
+2018,"Sri Lanka","LKA",1540,7
+2018,"Sudan","SDN",1095899,42
+2018,"Suriname","SUR",247,0
+2018,"Sweden","SWE",286102,6
+2018,"Switzerland","CHE",118787,1
+2018,"Syrian Arab Rep.","SYR",37448,233
+2018,"Tajikistan","TJK",2969,3
+2018,"Thailand","THA",103168,182
+2018,"Togo","TGO",13029,0
+2018,"Trinidad and Tobago","TTO",42564,1
+2018,"Tunisia","TUN",1311,19
+2018,"Turkey","TUR",3993387,94
+2018,"Turkmenistan","TKM",21,0
+2018,"Turks and Caicos Islands","TCA",5,0
+2018,"Uganda","UGA",1190915,10
+2018,"Ukraine","UKR",8995,36
+2018,"United Arab Emirates","ARE",7667,0
+2018,"United Kingdom of Great Britain and Northern Ireland","GBR",171942,101
+2018,"United Rep. of Tanzania","TZA",317981,3
+2018,"United States of America","USA",1032234,75
+2018,"Uruguay","URY",18388,0
+2018,"Uzbekistan","UZB",13,0
+2018,"Venezuela (Bolivarian Republic of)","VEN",67425,11
+2018,"Viet Nam","VNM",0,1
+2018,"Yemen","YEM",273164,497
+2018,"Zambia","ZMB",53177,0
+2018,"Zimbabwe","ZWE",18002,2
+2019,"Afghanistan","AFG",72474,1804
+2019,"Albania","ALB",125,1
+2019,"Algeria","DZA",100324,0
+2019,"Angola","AGO",55971,1
+2019,"Anguilla","AIA",11,0
+2019,"Argentina","ARG",185192,1
+2019,"Armenia","ARM",18138,0
+2019,"Aruba","ABW",17008,0
+2019,"Australia","AUS",135892,2
+2019,"Austria","AUT",165607,0
+2019,"Azerbaijan","AZE",1290,0
+2019,"Bahamas","BHS",23,0
+2019,"Bahrain","BHR",309,0
+2019,"Bangladesh","BGD",854813,32
+2019,"Barbados","BRB",10,0
+2019,"Belarus","BLR",2856,0
+2019,"Belgium","BEL",72524,1
+2019,"Belize","BLZ",2173,0
+2019,"Benin","BEN",1611,1
+2019,"Bolivia (Plurinational State of)","BOL",6577,1
+2019,"Bosnia and Herzegovina","BIH",5966,0
+2019,"Botswana","BWA",1263,0
+2019,"Brazil","BRA",363645,3
+2019,"Brunei Darussalam","BRN",0,0
+2019,"Bulgaria","BGR",22498,0
+2019,"Burkina Faso","BFA",25898,160
+2019,"Burundi","BDI",87555,6
+2019,"Cabo Verde","CPV",0,0
+2019,"Cambodia","KHM",27,0
+2019,"Cameroon","CMR",416324,146
+2019,"Canada","CAN",199458,5
+2019,"Cayman Islands","CYM",100,0
+2019,"Central African Rep.","CAF",7479,15
+2019,"Chad","TCD",446426,14
+2019,"Chile","CHL",463279,27
+2019,"China","CHN",304023,13
+2019,"China, Hong Kong SAR","HKG",128,0
+2019,"Colombia","COL",1780965,228
+2019,"Congo","COG",40085,0
+2019,"Costa Rica","CRI",114502,2
+2019,"Cote d'Ivoire","CIV",2171,1
+2019,"Croatia","HRV",1370,0
+2019,"Cuba","CUB",265,0
+2019,"Curacao ","CUW",16577,0
+2019,"Cyprus","CYP",31110,0
+2019,"Czechia","CZE",3686,0
+2019,"Dem. Rep. of the Congo","COD",526925,250
+2019,"Denmark","DNK",38995,2
+2019,"Djibouti","DJI",30863,0
+2019,"Dominican Rep.","DOM",34541,0
+2019,"Ecuador","ECU",503607,3
+2019,"Egypt","EGY",328233,63
+2019,"El Salvador","SLV",77,0
+2019,"Eritrea","ERI",199,0
+2019,"Estonia","EST",364,0
+2019,"Eswatini","SWZ",1903,0
+2019,"Ethiopia","ETH",734800,26
+2019,"Fiji","FJI",22,0
+2019,"Finland","FIN",32177,3
+2019,"France","FRA",510107,20
+2019,"Gabon","GAB",530,1
+2019,"Gambia","GMB",4508,0
+2019,"Georgia","GEO",2466,0
+2019,"Germany","DEU",1457639,16
+2019,"Ghana","GHA",13464,3
+2019,"Greece","GRC",186138,32
+2019,"Guatemala","GTM",1039,0
+2019,"Guinea","GIN",6944,0
+2019,"Guinea-Bissau","GNB",1876,0
+2019,"Guyana","GUY",22071,1
+2019,"Haiti","HTI",5,4
+2019,"Honduras","HND",184,5
+2019,"Hungary","HUN",5972,1
+2019,"Iceland","ISL",1265,0
+2019,"India","IND",207488,623
+2019,"Indonesia","IDN",13763,26
+2019,"Iran (Islamic Rep. of)","IRN",979470,8
+2019,"Iraq","IRQ",286924,642
+2019,"Ireland","IRL",15685,12
+2019,"Israel","ISR",54586,65
+2019,"Italy","ITA",254632,8
+2019,"Jamaica","JAM",126,0
+2019,"Japan","JPN",30586,2
+2019,"Jordan","JOR",745100,4
+2019,"Kazakhstan","KAZ",730,1
+2019,"Kenya","KEN",491907,49
+2019,"Kuwait","KWT",1765,0
+2019,"Kyrgyzstan","KGZ",511,0
+2019,"Latvia","LVA",706,0
+2019,"Lebanon","LBN",928260,7
+2019,"Lesotho","LSO",221,0
+2019,"Liberia","LBR",8236,1
+2019,"Libya","LBY",47526,70
+2019,"Liechtenstein","LIE",154,0
+2019,"Lithuania","LTU",2230,1
+2019,"Luxembourg","LUX",4333,0
+2019,"Madagascar","MDG",241,0
+2019,"Malawi","MWI",44911,5
+2019,"Malaysia","MYS",179837,2
+2019,"Mali","MLI",27676,137
+2019,"Malta","MLT",12701,0
+2019,"Mauritania","MRT",86441,0
+2019,"Mauritius","MUS",25,0
+2019,"Mexico","MEX",151818,31
+2019,"Monaco","MCO",22,0
+2019,"Mongolia","MNG",5,0
+2019,"Montenegro","MNE",1138,0
+2019,"Morocco","MAR",9955,0
+2019,"Mozambique","MOZ",25688,133
+2019,"Myanmar","MMR",0,90
+2019,"Namibia","NAM",5088,0
+2019,"Nauru","NRU",1170,0
+2019,"Nepal","NPL",19627,200
+2019,"Netherlands","NLD",110016,4
+2019,"New Zealand","NZL",2267,2
+2019,"Nicaragua","NIC",448,3
+2019,"Niger","NER",218074,49
+2019,"Nigeria","NGA",55190,507
+2019,"North Macedonia","MKD",429,0
+2019,"Norway","NOR",55422,3
+2019,"Oman","OMN",562,0
+2019,"Pakistan","PAK",1428142,362
+2019,"Panama","PAN",135977,0
+2019,"Papua New Guinea","PNG",9830,0
+2019,"Paraguay","PRY",5282,0
+2019,"Peru","PER",867763,1
+2019,"Philippines","PHL",999,466
+2019,"Poland","POL",17441,0
+2019,"Portugal","PRT",3432,0
+2019,"Qatar","QAT",301,0
+2019,"Rep. of Korea","KOR",28758,1
+2019,"Rep. of Moldova","MDA",511,0
+2019,"Romania","ROU",4776,0
+2019,"Russian Federation","RUS",43858,10
+2019,"Rwanda","RWA",145667,3
+2019,"Saint Kitts and Nevis","KNA",5,0
+2019,"Saint Vincent and the Grenadines","VCT",38,0
+2019,"Saudi Arabia","SAU",2642,42
+2019,"Senegal","SEN",16258,1
+2019,"Serbia and Kosovo: S/RES/1244 (1999)","SRB",26694,0
+2019,"Sierra Leone","SLE",441,0
+2019,"Singapore","SGP",0,0
+2019,"Sint Maarten (Dutch part)","SXM",10,0
+2019,"Slovakia","SVK",970,0
+2019,"Slovenia","SVN",1056,0
+2019,"Somalia","SOM",35675,361
+2019,"South Africa","ZAF",266630,23
+2019,"South Sudan","SSD",301987,13
+2019,"Spain","ESP",190781,4
+2019,"Sri Lanka","LKA",1402,15
+2019,"Sudan","SDN",1071237,26
+2019,"Suriname","SUR",1470,0
+2019,"Sweden","SWE",282378,2
+2019,"Switzerland","CHE",121362,1
+2019,"Syrian Arab Rep.","SYR",28319,292
+2019,"Tajikistan","TJK",5201,2
+2019,"Thailand","THA",98411,130
+2019,"Togo","TGO",12656,0
+2019,"Trinidad and Tobago","TTO",27336,1
+2019,"Tunisia","TUN",3367,16
+2019,"Turkey","TUR",3907788,70
+2019,"Turkmenistan","TKM",21,0
+2019,"Turks and Caicos Islands","TCA",5,0
+2019,"Uganda","UGA",1381262,4
+2019,"Ukraine","UKR",4566,31
+2019,"United Arab Emirates","ARE",8508,0
+2019,"United Kingdom of Great Britain and Northern Ireland","GBR",195030,86
+2019,"United Rep. of Tanzania","TZA",274199,1
+2019,"United States of America","USA",1189323,68
+2019,"Uruguay","URY",28602,0
+2019,"Uzbekistan","UZB",13,0
+2019,"Venezuela (Bolivarian Republic of)","VEN",67798,9
+2019,"Viet Nam","VNM",0,0
+2019,"Yemen","YEM",279828,772
+2019,"Zambia","ZMB",62599,0
+2019,"Zimbabwe","ZWE",20488,2

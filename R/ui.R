@@ -5,6 +5,8 @@ library(shinyWidgets)
 
 country_names <- read.csv("country-names.csv")
 countries <- country_names[["name"]]
+gtd <- read.csv("gtd_countries.csv")
+gtd <- gtd[["country"]]
 
 # Define UI for application that draws a histogram
 shinyUI(
@@ -13,7 +15,7 @@ shinyUI(
     fullscreen = TRUE,
     
     header = dashboardHeader(
-      "Refugee Analysis",
+      "Elpizo",
       
       title = dashboardBrand(
         title = "Refugee Analysis",
@@ -34,9 +36,9 @@ shinyUI(
         type = "notifications",
         notificationItem(
           inputId = "triggerCredits",
-          text = "Credits",
+          text = "Why Elpizo?",
           status = "info",
-          icon = icon("info"),
+          icon = icon("question"),
         )
       )
     ),
@@ -79,6 +81,12 @@ shinyUI(
           text = "Deon",
           tabName = "deon",
           icon = icon("check")
+        ),
+        bs4SidebarHeader("Misc"),
+        menuItem(
+          text = "Meet the Team",
+          tabName = "team",
+          icon = icon("users")
         )
       )
     ),
@@ -116,6 +124,7 @@ shinyUI(
       tags$style('#gender-settings li .nav-link { background-color: transparent !important}'),
       tags$style('.btn-group-toggle { margin-right: 1rem !important}'),
       tags$style('.radiobtn, .checkbtn { padding-right: 2rem !important; padding-left: 2rem !important}'),
+      tags$style('.img-circle { opacity: 1 !important}'),
       
       # SWEET ALERT #
       useSweetAlert(),
@@ -147,7 +156,7 @@ shinyUI(
               bs4Carousel(
               id = "refugee-carousell",
               bs4CarouselItem(
-                caption = div(class="text-block", h5("Refugees"), p("Who are they?")),
+                caption = div(class="text-block", p("Who are they?")),
                 tags$img(src = "https://assets.ey.com/content/dam/ey-sites/ey-com/en_gl/topics/purpose/ey-family-refugees-travels-desert.jpg", width = "100%")
               ),
               bs4CarouselItem(
@@ -155,7 +164,7 @@ shinyUI(
                 tags$img(src = "https://www.nrc.no/image/100838/coronavirus_refugees.jpg?width=1200&height=800", width = "100%")
               ),
               bs4CarouselItem(
-                caption = div(class="text-block", h5("Refugees"), p("How many are they?")),
+                caption = div(class="text-block", p("How many are they?")),
                 tags$img(src = "https://www.brookings.edu/wp-content/uploads/2016/07/jordan_refugeechildrenposing001.jpg", width = "100%")
               ),
               bs4CarouselItem(
@@ -293,8 +302,8 @@ shinyUI(
                                  sliderTextInput(
                                    inputId = "demo_year",
                                    label = "Year Range:",
-                                   choices = c(2010:2021),
-                                   selected = c(2010, 2021),
+                                   choices = c(2010:2020),
+                                   selected = c(2010, 2020),
                                    #width = "30%"
                                  ),
                                  
@@ -320,11 +329,289 @@ shinyUI(
                                    choiceValues = countries
                                  )
                              )
-                             
                              ),
-              controlbarItem("Age",
-                             "Simple text")
+              
+              controlbarItem(title = "Age",
+                             box(title = "Age Distribution",
+                                 
+                                 sidebar = boxSidebar(
+                                   icon = icon("question"),
+                                   id = "age_info",
+                                   background = "gray-dark",
+                                   h4("How to use?"),
+                                   p(code("Type"), ": Only choose one of them for pie chart. It will work once you select one or more countries together.
+                                     Country of Origin (where they come from) or Asylum (where they went to)."),
+                                   p(code("Year Range"), ": The range of years to display"),
+                                   p(code("Age Groups"), ": Different age group types. You can select multiple at once."),
+                                   p(code("Countries"), ": List of countries"),
+                                 ),
+                                 
+                                 width = 12,
+                                 maximizable = TRUE,
+                                 uiOutput("age")
+                             ),
+                             
+                             box(title = "", icon = icon("sliders-h"),
+                                 chooseSliderSkin(skin = "Shiny",
+                                                  color = NULL),
+                                 
+                                 width = 12, elevation = 1,
+                                 
+                                 checkboxGroupButtons(
+                                   inputId = "age_demo_type",
+                                   justified = TRUE,
+                                   label = "Type:",
+                                   choices = list("Origin" = 1, "Asylum" = 2),
+                                   individual = TRUE,
+                                   checkIcon = list(
+                                     yes = tags$i(class = "fa fa-check-square", 
+                                                  style = "color: steelblue"),
+                                     no = tags$i(class = "fa fa-square-o", 
+                                                 style = "color: steelblue"))
+                                 ),
+                                 
+                                 sliderTextInput(
+                                   inputId = "age_demo_year",
+                                   label = "Year Range:",
+                                   choices = c(2010:2020),
+                                   selected = c(2010, 2020),
+                                   #width = "30%"
+                                 ),
+                                 
+                                 pickerInput(
+                                   inputId = "age_demo_age_type",
+                                   label = "Age Groups:",
+                                   choices = list("0 - 4", "5 - 11", "12 - 17",
+                                                  "18 - 59", "60+"),
+                                   options = list(`actions-box` = TRUE),
+                                   multiple = TRUE,
+                                   selected = "refugees"
+                                 ),
+                                 
+                                 multiInput(
+                                   inputId = "age_demo_countries",
+                                   label = "Countries:", 
+                                   choices = NULL,
+                                   choiceNames = lapply(seq_along(countries), 
+                                                        function(i) tagList(#tags$img(src = flags[i],
+                                                          #width = 20, height = 15),
+                                                          countries[i])),
+                                   choiceValues = countries
+                                 )
+                             )
+                             
+              ),
+              
+              controlbarItem(title = "Gender by Country",
+                             box(title = "Gender Comparison by Country",
+                                 
+                                 sidebar = boxSidebar(
+                                   icon = icon("question"),
+                                   id = "gender_country_info",
+                                   background = "gray-dark",
+                                   h4("How to use?"),
+                                   p(code("Type"), ": Only choose one of them for pie chart. It will work once you select one or more countries together.
+                                     Country of Origin (where they come from) or Asylum (where they went to)."),
+                                   p(code("Year Range"), ": The range of years to display"),
+                                   p(code("Age Groups"), ": Different age group types. You can select multiple at once."),
+                                   p(code("Countries"), ": List of countries"),
+                                 ),
+                                 
+                                 width = 12,
+                                 maximizable = TRUE,
+                                 textOutput("gender_country_no_input"),
+                                 tags$head(tags$style("#gender_country_no_input{color: red;
+                                 font-size: 20px;font-weight: bolder;text-align: center;}")),
+                                 uiOutput("gender_country")
+                             ),
+                             
+                             box(title = "", icon = icon("sliders-h"),
+                                 chooseSliderSkin(skin = "Shiny",
+                                                  color = NULL),
+                                 
+                                 width = 12, elevation = 1,
+                                 
+                                 radioGroupButtons(
+                                   inputId = "gender_country_demo_type",
+                                   justified = TRUE,
+                                   label = "Type:",
+                                   choices = list("Origin" = 1, "Asylum" = 2),
+                                   individual = TRUE,
+                                   checkIcon = list(
+                                     yes = tags$i(class = "fa fa-check-square", 
+                                                  style = "color: steelblue"),
+                                     no = tags$i(class = "fa fa-square-o", 
+                                                 style = "color: steelblue"))
+                                 ),
+                                 
+                                 sliderTextInput(
+                                   inputId = "gender_country_demo_year",
+                                   label = "Year Range:",
+                                   choices = c(2010:2020),
+                                   selected = c(2010, 2020),
+                                   #width = "30%"
+                                 ),
+                                 
+                                 pickerInput(
+                                   inputId = "gender_country_demo_age_type",
+                                   label = "Age Groups:",
+                                   choices = list("0 - 4" = "age0to4", "5 - 11" = "age5to11", "12 - 17" = "age12to17",
+                                                  "18 - 59" = "age18to59", "60+" = "age60"),
+                                   options = list(`actions-box` = TRUE),
+                                   multiple = TRUE,
+                                   selected = "refugees"
+                                 ),
+                                 
+                                 multiInput(
+                                   inputId = "gender_country_demo_countries",
+                                   label = "Countries:", 
+                                   choices = NULL,
+                                   choiceNames = lapply(seq_along(countries), 
+                                                        function(i) tagList(#tags$img(src = flags[i],
+                                                          #width = 20, height = 15),
+                                                          countries[i])),
+                                   choiceValues = countries,
+                                   options = list(limit = 1)
+                                 )
+                             )
+                             
+              ),
+              
+              controlbarItem(title = "Age by Country",
+                             box(title = "Age Comparison by Country",
+                                 
+                                 sidebar = boxSidebar(
+                                   icon = icon("question"),
+                                   id = "age_country_info",
+                                   background = "gray-dark",
+                                   h4("How to use?"),
+                                   p(code("Type"), ": Only choose one of them for pie chart. It will work once you select one or more countries together.
+                                     Country of Origin (where they come from) or Asylum (where they went to)."),
+                                   p(code("Year Range"), ": The range of years to display"),
+                                   p(code("Age Groups"), ": Different age group types. You can select multiple at once."),
+                                   p(code("Countries"), ": List of countries"),
+                                 ),
+                                 
+                                 width = 12,
+                                 maximizable = TRUE,
+                                 textOutput("age_country_no_input"),
+                                 tags$head(tags$style("#age_country_no_input{color: red;
+                                 font-size: 20px;font-weight: bolder;text-align: center;}")),
+                                 uiOutput("age_country")
+                             ),
+                             
+                             box(title = "", icon = icon("sliders-h"),
+                                 chooseSliderSkin(skin = "Shiny",
+                                                  color = NULL),
+                                 
+                                 width = 12, elevation = 1,
+                                 
+                                 radioGroupButtons(
+                                   inputId = "age_country_demo_type",
+                                   justified = TRUE,
+                                   label = "Type:",
+                                   choices = list("Origin" = 1, "Asylum" = 2),
+                                   individual = TRUE,
+                                   checkIcon = list(
+                                     yes = tags$i(class = "fa fa-check-square", 
+                                                  style = "color: steelblue"),
+                                     no = tags$i(class = "fa fa-square-o", 
+                                                 style = "color: steelblue"))
+                                 ),
+                                 
+                                 checkboxGroupButtons(
+                                   inputId = "age_country_gender_type",
+                                   justified = TRUE,
+                                   label = "Gender Type:",
+                                   choices = list("Male" = 1, "Female" = 2),
+                                   individual = TRUE,
+                                   selected = c(1, 2),
+                                   checkIcon = list(
+                                     yes = tags$i(class = "fa fa-check-square", 
+                                                  style = "color: steelblue"),
+                                     no = tags$i(class = "fa fa-square-o", 
+                                                 style = "color: steelblue"))
+                                 ),
+                                 
+                                 sliderTextInput(
+                                   inputId = "age_country_demo_year",
+                                   label = "Year Range:",
+                                   choices = c(2010:2020),
+                                   selected = c(2010, 2020),
+                                   #width = "30%"
+                                 ),
+                                 
+                                 pickerInput(
+                                   inputId = "age_country_demo_age_type",
+                                   label = "Age Groups:",
+                                   choices = list("0 - 4" = "age0to4", "5 - 11" = "age5to11", "12 - 17" = "age12to17",
+                                                  "18 - 59" = "age18to59", "60+" = "age60"),
+                                   options = list(`actions-box` = TRUE),
+                                   multiple = TRUE,
+                                   selected = "refugees"
+                                 ),
+                                 
+                                 multiInput(
+                                   inputId = "age_country_demo_countries",
+                                   label = "Countries:", 
+                                   choices = NULL,
+                                   choiceNames = lapply(seq_along(countries), 
+                                                        function(i) tagList(#tags$img(src = flags[i],
+                                                          #width = 20, height = 15),
+                                                          countries[i])),
+                                   choiceValues = countries
+                                 )
+                             )
+                             
+              )
             )
+          )
+        ),
+        
+        tabItem(
+          tabName = "attacks",
+          
+          box(width = 12, id = 'welcome-header',
+              HTML("<h4><center>Terrorist Attacks & Refugees</center></h4><center>This section explores the correlation of terrorist attacks and asylum refugees.</center>
+                   <center>Year Range: 2010 - 2019</center>")
+          ),
+          
+          box(title = "Refugees & Attacks",
+              
+              sidebar = boxSidebar(
+                icon = icon("question"),
+                id = "gender_country_info",
+                background = "gray-dark",
+                h4("How to use?"),
+                p(code("Type"), ": Only choose one of them for pie chart. It will work once you select one or more countries together.
+                                     Country of Origin (where they come from) or Asylum (where they went to)."),
+                p(code("Year Range"), ": The range of years to display"),
+                p(code("Age Groups"), ": Different age group types. You can select multiple at once."),
+                p(code("Countries"), ": List of countries"),
+              ),
+              
+              width = 12,
+              maximizable = TRUE,
+              textOutput("attacks_no_input"),
+              tags$head(tags$style("#attacks_no_input{color: red;
+                                 font-size: 20px;font-weight: bolder;text-align: center;}")),
+              uiOutput("refugeeAttacks")
+          ),
+          
+          box(title = "", icon = icon("sliders-h"),
+              chooseSliderSkin(skin = "Shiny",
+                               color = NULL),
+              
+              width = 12, elevation = 1,
+              
+              multiInput(
+                inputId = "attack_countries",
+                label = "Countries:", 
+                choices = NULL,
+                choiceNames = gtd,
+                choiceValues = gtd,
+                options = list(limit = 1)
+              )
           )
         ),
         
@@ -334,10 +621,18 @@ shinyUI(
               title = "User Manual",
               span("Each graph has a "), icon("question"), span(" on the top right corner."),
               p(),
-              p("Click the icon to see how to configure individual graphs."),
-              p("Contact - Zahir (s2106642@siswa.um.edu.my) - if you have any issues/questions.")
+              p("Click the icon to see how to configure individual graphs.")
             
-          )
+          ),
+          box(width = 12,
+              title = "Terminology",
+              p("Terminology explanation")
+              
+          ),
+          box(width = 12,
+              title = "Contact Us",
+              p("If you have any issues/questions, feel free to contact:"),
+              span("Zahir (s2106642@siswa.um.edu.my)"))
         ),
         
         tabItem(
@@ -397,6 +692,97 @@ shinyUI(
                 selected = c("")
               )
      
+          )
+        ),
+        
+        tabItem(
+          tabName = "team",
+          
+          box(width = 12, id = 'welcome-header',
+              HTML("<h4><center>Meet the Team</center></h4>")
+          ),
+          
+          fluidRow(
+            bs4UserCard(
+              title = userDescription(
+                title = "Siva Prabhu",
+                subtitle = "Leader",
+                image = "https://zahirsher.com/images/Siva.jpeg",
+                backgroundImage = "https://img.freepik.com/free-vector/blue-copy-space-digital-background_23-2148821698.jpg?size=626&ext=jpg",
+                type = 1,
+                imageElevation = 2
+              ),
+              status = "olive",
+              closable = F,
+              maximizable = F,
+              width = 12,
+              collapsible = F,
+              HTML("<br/>")
+            ),
+            bs4UserCard(
+              title = userDescription(
+                title = "Zahiriddin Rustamov",
+                subtitle = "Leader",
+                image = "https://zahirsher.com/images/zahir.jpg",
+                backgroundImage = "https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg",
+                type = 1,
+                imageElevation = 2
+              ),
+              status = "olive",
+              closable = F,
+              maximizable = F,
+              width = 6,
+              collapsible = F,
+              HTML("<br/>")
+            ),
+            bs4UserCard(
+              title = userDescription(
+                title = "Jaloliddin Rustamov",
+                subtitle = "Leader",
+                image = "https://zahirsher.com/images/Siva.jpeg",
+                backgroundImage = "https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80",
+                type = 1,
+                imageElevation = 2
+              ),
+              status = "olive",
+              closable = F,
+              maximizable = F,
+              width = 6,
+              collapsible = F,
+              HTML("<br/>")
+            ),
+            bs4UserCard(
+              title = userDescription(
+                title = "Jeanne Ywei",
+                subtitle = "Leader",
+                image = "https://zahirsher.com/images/Siva.jpeg",
+                backgroundImage = "https://resources.owllabs.com/hs-fs/hubfs/Game-Thrones-Zoom-Background-jpg.jpeg?width=860&name=Game-Thrones-Zoom-Background-jpg.jpeg",
+                type = 1,
+                imageElevation = 2
+              ),
+              status = "olive",
+              closable = F,
+              maximizable = F,
+              width = 6,
+              collapsible = F,
+              HTML("<br/>")
+            ),
+            bs4UserCard(
+              title = userDescription(
+                title = "Sharmini Pereira",
+                subtitle = "Leader",
+                image = "https://zahirsher.com/images/Siva.jpeg",
+                backgroundImage = "https://img.freepik.com/free-vector/halftone-background-with-circles_23-2148907689.jpg?size=626&ext=jpg",
+                type = 1,
+                imageElevation = 2
+              ),
+              status = "olive",
+              closable = F,
+              maximizable = F,
+              width = 6,
+              collapsible = F,
+              HTML("<br/>")
+            )
           )
         )
         

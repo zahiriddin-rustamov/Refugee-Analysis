@@ -1,9 +1,17 @@
 ---
-title: "Refugee Analysis"
+title: "Elpizo"
 author: "Zahiriddin Rustamov"
 date: "1/23/2022"
-output: ioslides_presentation
+output:
+  ioslides_presentation:
+    widescreen: true
 ---
+
+<style>
+  h1 {
+  
+  }
+</style>
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)

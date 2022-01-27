@@ -4,6 +4,7 @@ library(bs4Dash)
 library(shinyWidgets)
 
 country_names <- read.csv("country-names.csv")
+country_names <- country_names[country_names["name"] != "Andorra", ]
 countries <- country_names[["name"]]
 gtd <- read.csv("gtd_countries.csv")
 gtd <- gtd[["country"]]
@@ -124,7 +125,10 @@ shinyUI(
       tags$style('#gender-settings li .nav-link { background-color: transparent !important}'),
       tags$style('.btn-group-toggle { margin-right: 1rem !important}'),
       tags$style('.radiobtn, .checkbtn { padding-right: 2rem !important; padding-left: 2rem !important}'),
-      tags$style('.img-circle { opacity: 1 !important}'),
+      tags$style('.img-circle { opacity: 1 !important; height: 90px !important}'),
+      tags$style('#sankey_comparison div { width: 700px !important;height:550px !important;margin: auto;}'),
+      
+      
       
       # SWEET ALERT #
       useSweetAlert(),
@@ -141,8 +145,12 @@ shinyUI(
               title = NULL, 
               headerBorder = FALSE, 
               id = 'welcome-header',
-              h1("Welcome!"),
-              p("Refugee Analysis Dashboard..."),
+              fluidRow(h3("Elpizo"), p("Refugee Analysis Dashboard", style = "font-size: 13px;")),
+              p("The number of refugees are increasing at an alarming rate. According to UNHCR, there are over 84 million forcibly displaced people wordwide at mid-2021."),
+              p("This dashboard aims to enlighten its visitors regarding:", style="margin-bottom: 5px;"),
+              HTML("(1) population figures<br/>(2) demographic contrast<br/>(3) whether there is a link between terrorist attacks and refugees"),
+              HTML("<br/><br/>"),
+              HTML("Click the <b>button</b> below to start your journey!"),
               hr(),
               actionBttn(
                 inputId = "learnmore",
@@ -244,6 +252,273 @@ shinyUI(
             )
           )
           
+        ),
+        
+        tabItem(
+          tabName = "population",
+          
+          box(width = 12, id = 'welcome-header',
+              HTML("<h4><center>Population of Refugees</center></h4><center>View the population figures, refugee flows & country comparisons in different years, refugee types and country of origin & asylum.</center>")
+          ),
+          
+          fluidRow(
+            controlbarMenu(
+              id = "pop-controlbarmenu",
+              vertical=T,
+              type = "pills",
+              side = "left",
+              
+              controlbarItem(title = "Race Bar",
+                             box(title = "Race Bar for Top Countries",
+                                 
+                                 sidebar = boxSidebar(
+                                   icon = icon("question"),
+                                   id = "pop_info",
+                                   background = "gray-dark",
+                                   h4("How to use?"),
+                                   p(code("Type"), ": Only choose one of them for pie chart. It will work once you select one or more countries together.
+                                     Country of Origin (where they come from) or Asylum (where they went to)."),
+                                   p(code("Year Range"), ": The range of years to display"),
+                                   p(code("Age Groups"), ": Different age group types. You can select multiple at once."),
+                                   p(code("Countries"), ": List of countries"),
+                                 ),
+                                 
+                                 width = 12,
+                                 maximizable = TRUE,
+                                 uiOutput("top10origin")
+                             ),
+                             
+                             box(title = "", icon = icon("sliders-h"),
+                                 chooseSliderSkin(skin = "Shiny",
+                                                  color = NULL),
+                                 
+                                 width = 12, elevation = 1,
+                                 
+                                 radioGroupButtons(
+                                   inputId = "racebar_pop_type",
+                                   justified = TRUE,
+                                   label = "Type:",
+                                   choices = list("Origin" = 1, "Asylum" = 2),
+                                   selected = 1,
+                                   individual = TRUE,
+                                   checkIcon = list(
+                                     yes = tags$i(class = "fa fa-check-square", 
+                                                  style = "color: steelblue"),
+                                     no = tags$i(class = "fa fa-square-o", 
+                                                 style = "color: steelblue"))
+                                 ),
+                                 
+                                 HTML("<br/>"),
+                                 
+                                 fluidRow(
+                                   HTML("&nbsp;&nbsp;"),
+                                   p("Change to Low Image Resolution:"),
+                                   HTML("&nbsp;&nbsp;"),
+                                   switchInput(
+                                     inputId = "racebar_lowres",
+                                     onStatus = "success", 
+                                     offStatus = "danger",
+                                     size = 'small'
+                                   )
+                                 )
+                             )
+              ),
+              
+              controlbarItem(title = "Treemap",
+                             box(title = "Overall Population Comparison",
+                                 
+                                 sidebar = boxSidebar(
+                                   icon = icon("question"),
+                                   id = "pop_treemap_info",
+                                   background = "gray-dark",
+                                   h4("How to use?"),
+                                   p(code("Type"), ": Only choose one of them for pie chart. It will work once you select one or more countries together.
+                                     Country of Origin (where they come from) or Asylum (where they went to)."),
+                                   p(code("Year Range"), ": The range of years to display"),
+                                   p(code("Age Groups"), ": Different age group types. You can select multiple at once."),
+                                   p(code("Countries"), ": List of countries"),
+                                 ),
+                                 
+                                 width = 12,
+                                 maximizable = TRUE,
+                                 textOutput("pop_treemap_no_input"),
+                                 tags$head(tags$style("#pop_country_no_input{color: red;
+                                 font-size: 20px;font-weight: bolder;text-align: center;}")),
+                                 uiOutput("treemap_comparison")
+                             ),
+                             
+                             box(title = "", icon = icon("sliders-h"),
+                                 chooseSliderSkin(skin = "Shiny",
+                                                  color = NULL),
+                                 
+                                 width = 12, elevation = 1,
+                                 
+                                 radioGroupButtons(
+                                   inputId = "treemap_pop_type",
+                                   justified = TRUE,
+                                   label = "Type:",
+                                   choices = list("Origin" = 1, "Asylum" = 2),
+                                   selected = 1,
+                                   individual = TRUE,
+                                   checkIcon = list(
+                                     yes = tags$i(class = "fa fa-check-square", 
+                                                  style = "color: steelblue"),
+                                     no = tags$i(class = "fa fa-square-o", 
+                                                 style = "color: steelblue"))
+                                 ),
+                                 
+                                 sliderTextInput(
+                                   inputId = "treemap_year",
+                                   label = "Year Range:",
+                                   choices = c(2010:2021),
+                                   selected = c(2010, 2021),
+                                   #width = "30%"
+                                 ),
+                                 
+                                 multiInput(
+                                   inputId = "treemap_countries",
+                                   label = "Countries:", 
+                                   choices = NULL,
+                                   choiceNames = countries,
+                                   choiceValues = countries
+                                 ),
+                                 
+                                 pickerInput(
+                                   inputId = "treemap_refugee_type",
+                                   label = "Population Types:",
+                                   choices = list("Refugees" = "refugees", "Asylum Seekers" = "asylum_seekers", "IDPs of concern to UNHCR" = "idps",
+                                                  "Venezuelans displaced abroad" = "venz", "Stateless Persons" = "stateless",
+                                                  "Others of concern" = "others"),
+                                   options = list(`actions-box` = TRUE),
+                                   multiple = TRUE,
+                                   selected = "refugees"
+                                 )
+                             )
+              ),
+              
+              controlbarItem(title = "Country",
+                             box(title = "Population Comparison by Country",
+                                 
+                                 sidebar = boxSidebar(
+                                   icon = icon("question"),
+                                   id = "pop_country_info",
+                                   background = "gray-dark",
+                                   h4("How to use?"),
+                                   p(code("Type"), ": Only choose one of them for pie chart. It will work once you select one or more countries together.
+                                     Country of Origin (where they come from) or Asylum (where they went to)."),
+                                   p(code("Year Range"), ": The range of years to display"),
+                                   p(code("Age Groups"), ": Different age group types. You can select multiple at once."),
+                                   p(code("Countries"), ": List of countries"),
+                                 ),
+                                 
+                                 width = 12,
+                                 maximizable = TRUE,
+                                 textOutput("pop_country_no_input"),
+                                 tags$head(tags$style("#pop_country_no_input{color: red;
+                                 font-size: 20px;font-weight: bolder;text-align: center;}")),
+                                 uiOutput("country_comparison")
+                             ),
+                             
+                             box(title = "", icon = icon("sliders-h"),
+                                 chooseSliderSkin(skin = "Shiny",
+                                                  color = NULL),
+                                 
+                                 width = 12, elevation = 1,
+                                 
+                                 radioGroupButtons(
+                                   inputId = "country_pop_type",
+                                   justified = TRUE,
+                                   label = "Type:",
+                                   choices = list("Origin" = 1, "Asylum" = 2),
+                                   selected = 1,
+                                   individual = TRUE,
+                                   checkIcon = list(
+                                     yes = tags$i(class = "fa fa-check-square", 
+                                                  style = "color: steelblue"),
+                                     no = tags$i(class = "fa fa-square-o", 
+                                                 style = "color: steelblue"))
+                                 ),
+                                 
+                                 sliderTextInput(
+                                   inputId = "pop_country_year",
+                                   label = "Year Range:",
+                                   choices = c(2010:2021),
+                                   selected = c(2010, 2021),
+                                   #width = "30%"
+                                 ),
+                                 
+                                 multiInput(
+                                   inputId = "pop_countries",
+                                   label = "Countries:", 
+                                   choices = NULL,
+                                   choiceNames = countries,
+                                   choiceValues = countries
+                                 ),
+                                 
+                                 pickerInput(
+                                   inputId = "pop_refugee_type",
+                                   label = "Population Types:",
+                                   choices = list("Refugees" = "refugees", "Asylum Seekers" = "asylum_seekers", "IDPs of concern to UNHCR" = "idps",
+                                                  "Venezuelans displaced abroad" = "venz", "Stateless Persons" = "stateless",
+                                                  "Others of concern" = "others"),
+                                   options = list(`actions-box` = TRUE),
+                                   multiple = TRUE,
+                                   selected = "refugees"
+                                 )
+                             )
+              ),
+              
+              controlbarItem(title = "Flow",
+                             box(title = "Refugee Flow",
+                                 
+                                 sidebar = boxSidebar(
+                                   icon = icon("question"),
+                                   id = "pop_sankey_info",
+                                   background = "gray-dark",
+                                   h4("How to use?"),
+                                   p(code("Type"), ": Only choose one of them for pie chart. It will work once you select one or more countries together.
+                                     Country of Origin (where they come from) or Asylum (where they went to)."),
+                                   p(code("Year Range"), ": The range of years to display"),
+                                   p(code("Age Groups"), ": Different age group types. You can select multiple at once."),
+                                   p(code("Countries"), ": List of countries"),
+                                 ),
+                                 
+                                 width = 12,
+                                 maximizable = TRUE,
+                                 textOutput("pop_sankey_no_input"),
+                                 tags$head(tags$style("#pop_country_no_input{color: red;
+                                 font-size: 20px;font-weight: bolder;text-align: center;}")),
+                                 uiOutput("sankey_comparison")
+                             ),
+                             
+                             box(title = "", icon = icon("sliders-h"),
+                                 chooseSliderSkin(skin = "Shiny",
+                                                  color = NULL),
+                                 
+                                 width = 12, elevation = 1,
+                                 
+                                 sliderTextInput(
+                                   inputId = "sankey_year",
+                                   label = "Year Range:",
+                                   choices = c(2010:2021),
+                                   selected = c(2010, 2021),
+                                   #width = "30%"
+                                 ),
+                                 
+                                 pickerInput(
+                                   inputId = "sankey_refugee_type",
+                                   label = "Population Types:",
+                                   choices = list("Refugees" = "refugees", "Asylum Seekers" = "asylum_seekers", "IDPs of concern to UNHCR" = "idps",
+                                                  "Venezuelans displaced abroad" = "venz", "Stateless Persons" = "stateless",
+                                                  "Others of concern" = "others"),
+                                   options = list(`actions-box` = TRUE),
+                                   multiple = TRUE,
+                                   selected = "refugees"
+                                 )
+                             )
+              )
+            )
+          )
         ),
         
         tabItem(
@@ -611,6 +886,18 @@ shinyUI(
                 choiceNames = gtd,
                 choiceValues = gtd,
                 options = list(limit = 1)
+              ),
+              
+              fluidRow(
+                HTML("&nbsp;&nbsp;"),
+                p("Include All Countries:"),
+                HTML("&nbsp;&nbsp;"),
+                switchInput(
+                  inputId = "attacks_all",
+                  onStatus = "success", 
+                  offStatus = "danger",
+                  size = 'small'
+                )
               )
           )
         ),
@@ -621,13 +908,33 @@ shinyUI(
               title = "User Manual",
               span("Each graph has a "), icon("question"), span(" on the top right corner."),
               p(),
-              p("Click the icon to see how to configure individual graphs.")
+              p("Click the icon to see the manual for the individual graphs.")
             
           ),
           box(width = 12,
-              title = "Terminology",
-              p("Terminology explanation")
+              title = "Section Understanding",
+              p("This section explains the different sections available in this dashboard and what they ought to achieve."),
+              HTML("<b>Home:</b> The first page of the dashboard. It is a page to welcome the visitor."),
               
+              HTML("<br/><hr><b>Stats</b><br/><b>Overview:</b> Overview provides the refugee population statistics in the form of an interactive map. The user can change the settings to see different outputs."),
+              HTML("<br/><br/><b>Population:</b> Population provides the refugee population comparison using different graphs, including country comparisons, refugee flows and top countries of origin and asylum."),
+              HTML("<br/><br/><b>Demographics:</b> Demographics provides the refugee demographics comparison including age and gender for comparison in different countries, years and countries of origin & asylum."),
+              HTML("<br/><br/><b>Attacks:</b> Attacks aims to display the correlation between the number of refugees in their respective countries of asylum and terrorist attacks."),
+              
+              HTML("<br/><br/><hr><b>Documentation</b><br/><b>User Manual:</b> User Manual provides explanation on how to use this dashboard."),
+              HTML("<br/><br/><b>Deon:</b> Deon is a Data Science Ethics checklist. This dashboard aims to comply to ethics where applicable."),
+              
+              HTML("<br/><br/><hr><b>Misc</b><br/><b>Meet the Team:</b> The members behind this dashboard.")
+          ),
+          box(width = 12,
+              title = "Terminology",
+              HTML("<b>Country Types:</b><br/><b>Country of Origin:</b><br/>The country the refugees originate/come/leave from.<br/><br/><b>Country of Asylum:</b><br/>A country in which an applicant for international protection has either (a) been recognised as a refugee and they can still avail themselves of that protection ; or (b) otherwise enjoys sufficient protection, including benefiting from the principle of non-refoulement, provided that they will be readmitted to that country."),
+              HTML("<br/><br/><hr><b>Refugee Types:</b><br/><b>Refugee:</b><br/>A person who meets the eligibility criteria under the applicable refugee definition, as provided for by international or regional instruments, under UNHCR's mandate, and/or in national legislation."),
+              HTML("<br/><br/><b>Asylum seeker:</b><br/>An individual who is seeking international protection. In countries with individualized procedures, an asylum-seeker is someone whose claim has not yet been finally decided on by the country in which the claim is submitted. Not every asylum-seeker will ultimately be recognized as a refugee, but every refugee was initially an asylum-seeker."),
+              HTML("<br/><br/><b>IDPs:</b><br/>IDPs are people who have been forced to leave or abandon their homes, and who have not crossed an internationally recognized border."),
+              HTML("<br/><br/><b>Venezuelans Displaced Abroad:</b><br/>People are leaving Venezuela for many reasons: violence, insecurity, fear of being targeted for their political opinions (whether real or perceived), shortages of food and medicine, lack of access to social services, and being unable to support themselves and their families."),
+              HTML("<br/><br/><b>Stateless persons:</b><br/>A person who is not considered as a national by any State under the operation of its law"),
+              HTML("<br/><br/><b>Others of concern:</b><br/>People of concern to UNHCR to whom UNHCR may extend its protection and/or assistance")
           ),
           box(width = 12,
               title = "Contact Us",
@@ -722,7 +1029,7 @@ shinyUI(
             bs4UserCard(
               title = userDescription(
                 title = "Zahiriddin Rustamov",
-                subtitle = "Leader",
+                subtitle = "",
                 image = "https://zahirsher.com/images/zahir.jpg",
                 backgroundImage = "https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg",
                 type = 1,
@@ -738,8 +1045,8 @@ shinyUI(
             bs4UserCard(
               title = userDescription(
                 title = "Jaloliddin Rustamov",
-                subtitle = "Leader",
-                image = "https://zahirsher.com/images/Siva.jpeg",
+                subtitle = "",
+                image = "https://zahirsher.com/images/Jaloliddin2.jpg",
                 backgroundImage = "https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80",
                 type = 1,
                 imageElevation = 2
@@ -754,8 +1061,8 @@ shinyUI(
             bs4UserCard(
               title = userDescription(
                 title = "Jeanne Ywei",
-                subtitle = "Leader",
-                image = "https://zahirsher.com/images/Siva.jpeg",
+                subtitle = "",
+                image = "https://zahirsher.com/images/Veanci2.jpg",
                 backgroundImage = "https://resources.owllabs.com/hs-fs/hubfs/Game-Thrones-Zoom-Background-jpg.jpeg?width=860&name=Game-Thrones-Zoom-Background-jpg.jpeg",
                 type = 1,
                 imageElevation = 2
@@ -770,8 +1077,8 @@ shinyUI(
             bs4UserCard(
               title = userDescription(
                 title = "Sharmini Pereira",
-                subtitle = "Leader",
-                image = "https://zahirsher.com/images/Siva.jpeg",
+                subtitle = "",
+                image = "https://zahirsher.com/images/Sharmini.jpeg",
                 backgroundImage = "https://img.freepik.com/free-vector/halftone-background-with-circles_23-2148907689.jpg?size=626&ext=jpg",
                 type = 1,
                 imageElevation = 2

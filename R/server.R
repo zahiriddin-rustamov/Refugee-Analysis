@@ -6,6 +6,7 @@ library(countrycode)
 library(plotly)
 library(randomcoloR)
 library(scales)
+library(networkD3)
 
 population <- read.csv("population-cleaned.csv")
 demo_gender <- read.csv("demographics-gender-cleaned.csv")
@@ -18,15 +19,17 @@ origin_countries <- origin_countries[["origin"]]
 
 #Colors for the map
 data(worldgeojson, package = "highcharter")
-dshmstops <- data.frame(q = c(0, exp(1: 5) / exp(5)),
+dshmstops <- data.frame(q = c(0, exp(1:5) / exp(5)),
                         c = substring(viridis(5 + 1, option = "D"), 0, 7)) %>% list_parse2()
 
 #Random Colors
-randomColor = ""
-for (i in 1:100) {
-  randomColor = rbind(randomColor, randomColor(count = 1, hue = c("random"), luminosity = c("dark")))
-}
-randomColor <- randomColor[-1]
+#randomColor = ""
+#for (i in 1:100) {
+  #randomColor = rbind(randomColor, randomColor(count = 1, hue = c("random"), luminosity = c("dark")))
+#}
+#randomColor <- randomColor[-1]
+
+randomColor = randomColor(count = 100, hue = c("random"), luminosity = c("dark"))
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output, session) {
@@ -94,7 +97,7 @@ shinyServer(function(input, output, session) {
       hc_add_theme(hc_theme_google()) %>%
       hc_credits(enabled = TRUE,
                  text = "Source: UNHCR Refugee Data",
-                 style = list(fontSize = "10px"))%>%
+                 style = list(fontSize = "10px")) %>%
       hc_chart(events = list(load = JS("function() {
       var chart = this; chart.update({
         chart: {
@@ -392,20 +395,31 @@ shinyServer(function(input, output, session) {
   }, ignoreNULL=FALSE)
   
   output$refugeeAttacks <- renderUI({
-    input_country <- input$attack_countries
-    if (length(input_country) == 0) {
-      output$attacks_no_input <- renderText({ 
-        "Please select a country."
-      })
-      return()
+    
+    if (input$attacks_all) {
+      gtd -> gtd_country
+      input_country = "All Countries"
       
-    } else {
       output$attacks_no_input <- renderText({ 
         ""
       })
+    } else {
+      input_country <- input$attack_countries
+      if (length(input_country) == 0) {
+        output$attacks_no_input <- renderText({ 
+          "Please select a country."
+        })
+        return()
+        
+      } else {
+        output$attacks_no_input <- renderText({ 
+          ""
+        })
+      }
+      
+      gtd %>% filter(country == input_country) -> gtd_country
     }
     
-    gtd %>% filter(country == input_country) -> gtd_country
     gtd_country$size <- rescale(gtd_country$attacks, to=c(0,80))
     
     fig <- plot_ly(gtd_country, x = ~refugees, y = ~attacks, text = ~year, color = ~size, type = 'scatter', mode = 'markers', name = 'year',
@@ -418,5 +432,201 @@ shinyServer(function(input, output, session) {
     
     fig %>% hide_colorbar()
   }) 
+  
+  output$top10origin <- renderUI({
+    
+    type <- as.integer(input$racebar_pop_type)
+    
+    if (input$racebar_lowres) {
+      if (type == 1) {
+        imgSrc = 'http://www.zahirsher.com/images/origin_top10.gif'
+      } else {
+        imgSrc = 'http://www.zahirsher.com/images/asylum_top10.gif'
+      }
+    } else {
+      if (type == 1) {
+        imgSrc = 'http://www.zahirsher.com/images/origin_top10hd.gif'
+      } else {
+        imgSrc = 'http://www.zahirsher.com/images/asylum_top10hd.gif'
+      }
+    }
+    
+    img(src = imgSrc, class="img-fluid", style = "opacity:1")
+  })
+  
+  output$country_comparison <- renderUI({
+    
+    countries <- input$pop_countries
+    refugee_type <- input$pop_refugee_type
+    year_range <- as.integer(input$pop_country_year)
+    type <- as.integer(input$country_pop_type)
+    
+    if (length(countries) == 0) {
+      output$pop_country_no_input <- renderText({ 
+        "Please select a country."
+      })
+      return()
+      
+    } else {
+      output$pop_country_no_input <- renderText({ 
+        ""
+      })
+    }
+    
+    if (year_range[1] == year_range[2]) {
+      return ()
+    }
+    
+    pop <- data.frame(population)
+    class(pop$year) <- "character"
+    
+    if (type == 1) {
+      pop <- pop %>% group_by(year, origin) %>% rename("country" = origin)
+    } else {
+      pop <- pop %>% group_by(year, asylum) %>% rename("country" = asylum)
+    }
+    
+    if (length(refugee_type) == 0) {
+      refugee_type <- "refugees"
+    }
+    
+    pop <- pop %>% filter(year >= year_range[1], year <= year_range[2]) %>% 
+      summarise(across(c(refugee_type), sum), .groups = 'drop') %>%
+      mutate(total = rowSums(select_if(., is.numeric), na.rm = TRUE))
+    
+    country <- pop %>% filter(country == countries[1])
+    fig <- plot_ly(x = country$year, y = country$total, type = 'scatter', name = countries[1], mode = 'lines+markers',
+                   line = list(color = randomColor[[1]], width = 3), marker = list(color = randomColor[[1]], size = 10))
+    
+    if (length(countries) > 1) {
+      for (i in 2:length(countries)) {
+        country <- pop %>% filter(country == countries[i]) 
+        fig <- fig %>% add_trace(y = country$total, name = countries[i], line = list(color = randomColor[[i]], width = 3),
+                                 marker = list(color = randomColor[[i]], size = 10))
+      }
+    }
 
+    fig %>% layout(paper_bgcolor='transparent',
+                   plot_bgcolor  = "rgba(0, 0, 0, 0)")
+  })
+
+  observeEvent(input$pop_country_year,{
+    if(input$pop_country_year[1] == input$pop_country_year[2]){
+      if (input$pop_country_year[1] != 2010) {
+        updateSliderTextInput(session,"pop_country_year",selected = c((input$pop_country_year[1]-1),input$pop_country_year[2]))
+      } else {
+        updateSliderTextInput(session,"pop_country_year",selected = c((input$pop_country_year[1]),input$pop_country_year[2]+1))
+      }
+    }
+  })
+  
+  output$treemap_comparison <- renderUI({
+    
+    countries <- input$treemap_countries
+    refugee_type <- input$treemap_refugee_type
+    year_range <- as.integer(input$treemap_year)
+    type <- as.integer(input$treemap_pop_type)
+    
+    if (!is.null(countries)) {
+      if (type == 1) {
+        countries_to_include <- countries %in% origin_countries
+      } else {
+        countries_to_include <- countries %in% asylum_countries
+      }
+      
+      typeChecker <- ifelse(type == 1, "origin", "asylum")
+      
+      for (num in 1:length(countries[countries_to_include])) {
+        if (num == 1) {
+          pop2 <- population[population[typeChecker] == countries[countries_to_include][num],]
+        } else {
+          pop2 <- rbind(pop2, population[population[typeChecker] == countries[countries_to_include][num],])
+        }
+      }
+      
+      if (!is.null(pop2$origin[1])) {
+        population <- pop2
+      }
+    }
+    
+    pop <- population %>% filter(year >= year_range[1], year <= year_range[2])
+    
+    if (type == 1) {
+      if (year_range[1] == year_range[2]) {
+        title = paste0("Country of Origin in ", year_range[1])
+      } else {
+        title = paste0("Country of Origin from ", year_range[1], " to ", year_range[2])
+      }
+      pop <- pop %>% group_by(origin) %>% rename("country" = origin)
+    } else {
+      if (year_range[1] == year_range[2]) {
+        title = paste0("Country of Asylum in ", year_range[1])
+      } else {
+        title = paste0("Country of Asylum from ", year_range[1], " to ", year_range[2])
+      }
+      pop <- pop %>% group_by(asylum) %>% rename("country" = asylum)
+    }
+    
+    if (length(refugee_type) == 0) {
+      refugee_type <- "refugees"
+    }
+    
+    pop <- pop %>% select(country, refugee_type) %>%
+      summarise(across(c(refugee_type), sum), .groups = 'drop') %>%
+      mutate(total = rowSums(select_if(., is.numeric), na.rm = TRUE)) %>%
+      arrange(desc(total))
+    pop <- pop[1:25,]
+    
+    hchart(pop, type="treemap",hcaes(x = country, value = total, color = total)) %>%
+      hc_title(text = title) %>%
+      hc_colorAxis(stops = dshmstops) %>%
+      hc_add_theme(hc_theme_google()) %>%
+      hc_credits(enabled = TRUE, text = "Data Source: UNHCR Refugee Data", style = list(fontSize = "12px")) %>%
+      hc_legend(enabled = FALSE) %>%
+      hc_chart(events = list(load = JS("function() {
+      var chart = this; chart.update({
+        chart: {
+          backgroundColor: 'transparent'
+        }
+      }); 
+    }
+    ")
+      ))
+  })
+  
+  output$sankey_comparison <- renderUI({
+    year_range <- as.integer(input$sankey_year)
+    refugee_type <- input$sankey_refugee_type
+    
+    if (length(refugee_type) == 0) {
+      refugee_type <- "refugees"
+    }
+    
+    df <- data.frame(population)
+    
+    df <- df %>% filter(year >= year_range[1], year <= year_range[2])
+    
+    df <- df %>% group_by(origin, asylum) %>%
+      select(origin, asylum, refugee_type) %>%
+      summarise(across(c(refugee_type), sum), .groups = 'drop') %>%
+      mutate(total = rowSums(select_if(., is.numeric), na.rm = TRUE)) %>%
+      arrange(desc(total))
+    
+    df <- df[1:20, ]
+    df <- df %>% group_by(asylum) %>% mutate(IDtarget=cur_group_id())
+    df <- df %>% group_by(origin) %>% mutate(IDsource=cur_group_id())
+    df_nodes <- data.frame(name=c(as.character(df$origin), as.character(df$asylum)) %>% unique())
+    
+    df$IDsource=match(df$origin, df_nodes$name)-1 
+    df$IDtarget=match(df$asylum, df_nodes$name)-1
+    
+    ColourScal ='d3.scaleOrdinal() .range(["#FDE725FF","#B4DE2CFF","#6DCD59FF","#35B779FF", "#c402d9FF", "#02d9c4FF", "#fda233FF", "#bd3552FF",
+"#1F9E89FF","#26828EFF","#31688EFF","#3E4A89FF","#482878FF","#440154FF", "#800813FF", "#084f80FF", "#088039FF", "#081380FF"])'
+    
+    sankeyNetwork(Links = data.frame(df), Nodes = df_nodes,
+                  Source = "IDsource", Target = "IDtarget",
+                  Value = "total", NodeID = "name", 
+                  sinksRight=FALSE, colourScale=ColourScal, nodeWidth=40, fontSize=13, nodePadding=20, fontFamily = "Verdana")
+  })
+  
 })

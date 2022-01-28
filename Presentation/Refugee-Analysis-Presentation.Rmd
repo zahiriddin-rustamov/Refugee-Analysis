@@ -1,10 +1,13 @@
 ---
 title: "Elpizo"
-author: "Zahiriddin Rustamov"
-date: "1/23/2022"
+subtitle: "Refugee Analysis Dashboard from 2010 to 2021"
+author: Siva Prabhu (S2103885)<br/>Zahiriddin Rustamov (S2106642)<br/>Jaloliddin Rustamov (S2106643)<br/>Jeanne Ywei (S2117461)<br/>Sharmini Pereira (S2114594)<br/>
+date: "29 Jan 2022"
 output:
   ioslides_presentation:
     widescreen: true
+    incremental: true
+    slide_level: 2
 ---
 
 <style>
@@ -17,27 +20,112 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## R Markdown
+## Background
 
-This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+The refugees' problem is a hot topic in contemporary society nowadays. There are over 84 million forcibly displaced people worldwide at mid-2021. Irrespective of refugees' race, color, religion and nationality, precious lives are at stake. 
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+In this study, we wish to explore the population and demographics of refugees — and to answer a question most people had in mind at some point — <br/>their relationship to terrorist attacks.
 
-## Slide with Bullets
+### <b>Questions:</b>
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
+1. Is there a disparity in the age groups for the number of refugees?
+2. Is there a difference in gender for the flow of refugees?
+3. Which countries of asylum are the most accepting of refugee populations?
+4. Does the refugee population correlate with the number of terrorist attacks in the country of asylum?
 
-## Slide with R Output
+##
 
-```{r cars, echo = TRUE}
-summary(cars)
-```
+<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
 
-## Slide with Plot
+<img src="data-science-process.svg" height = "500px" class="center"/>
 
-```{r pressure}
-plot(pressure)
+<small style="font-size: small">by Joe Blitzstein and Hanspeter Pfister</small>
+
+## Main Features
+
+<style>
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+</style>
+
+<div class="row">
+
+  <div class="column">
+  <b>1. Overview</b><br/>
+  An interactive map of the refugee population with a year range.
+  
+  <b>2. Population</b><br/>
+  Refugee population statistics visualized using various interactive charts.
+  
+  <b>3. Demographics</b><br/>
+  The age and gender comparisons for the refugee populations.
+  
+  <b>4. Attacks</b><br/>
+  Explore the correlation between the flow of refugees and terrorist attacks.
+  <br/><small style="font-size: small">and many more!</small>
+  </div>
+  
+  <div class="column"> <img src="features.gif" height = "500px" class="center"/> </div>
+  
+</div>
+
+## Conclusion
+
+### **Experiences:**
+
+- A deep dive into the data science processes
+- Ability to preprocess different dataset shapes
+- The creation of a dashboard using Shiny
+- Explore different charts to visualize information efficiently
+- Apply `deon` — Data Science Ethics Checklist
+
+### **Our Work:**
+
+<style>
+.img-with-text {
+    text-align: left;
+    width: 100px;
+    float: left;
+}
+
+.img-with-text img {
+    display: block;
+    margin: 0 auto;
+}
+
+.img-with-text p {
+    font-size: 16px;
+}
+</style>
+
+<div>
+
+<div class="img-with-text" style="padding-right: 3rem !important; cursor: pointer;" onclick="window.open('https://zahirsher.shinyapps.io/Refugee-Dashboard/','mywindow');">
+  <img src="shiny.png" alt="Shiny Logo" width = "80px"/>
+  <p style="padding-top: 0.6rem;padding-left: 0rem;text-align: center;font-weight: bold;">View Elpizo Shiny App</p>
+</div>
+
+<div class="img-with-text" onclick="window.open('https://github.com/zahir2000/Refugee-Analysis','mywindow');" style="cursor: pointer;">
+  <img src="github.png" alt="Github Logo" width = "100px"/>
+  <p style="text-align: center;padding-top: 0.6rem;font-weight: bold;">View Source Code</p>
+</div>
+
+</div>
+  
+
+
+```{r conclusion}
+
 ```
 

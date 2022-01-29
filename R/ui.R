@@ -88,6 +88,11 @@ shinyUI(
           text = "Meet the Team",
           tabName = "team",
           icon = icon("users")
+        ),
+        menuItem(
+          text = "Transparency",
+          tabName = "code",
+          icon = icon("code")
         )
       )
     ),
@@ -1091,6 +1096,16 @@ shinyUI(
               HTML("<br/>")
             )
           )
+        ),
+        
+        tabItem(
+          tabName = "code",
+          
+          box(width = 12,
+              title = "Transparency",
+              p("Elpizo believes in reproducibility and transparency."),
+              HTML("Hence, visit <a href='https://github.com/zahir2000/Refugee-Analysis'>GitHub</a> to see the data, analysis and tools used to complete this dashboard.")
+              )
         )
         
         

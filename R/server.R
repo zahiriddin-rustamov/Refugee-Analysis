@@ -571,7 +571,7 @@ shinyServer(function(input, output, session) {
       refugee_type <- "refugees"
     }
     
-    pop <- pop %>% select(country, refugee_type) %>%
+    pop <- pop %>% select(country, all_of(refugee_type)) %>%
       summarise(across(c(refugee_type), sum), .groups = 'drop') %>%
       mutate(total = rowSums(select_if(., is.numeric), na.rm = TRUE)) %>%
       arrange(desc(total))

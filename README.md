@@ -1,5 +1,8 @@
 # Refugee Analysis Dashboard using Shiny
 
+## Short Description
+- Elpizo is a refugee analysis dashboard from 2010 to mid-2021. Shows statistics regarding refugee populations, demographics and attacks.
+
 ## Tools Used
 - [R-Studio](https://www.rstudio.com/) (2021.09.0 Build 351)
 

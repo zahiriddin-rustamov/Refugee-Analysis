@@ -33,3 +33,6 @@ Access to Data Used: [.csv](https://github.com/zahir2000/Refugee-Analysis/tree/m
 ## Links
 - Shiny App: https://zahirsher.shinyapps.io/Refugee-Dashboard/
 - Presentation Link: https://rpubs.com/zahirsher/elpizo
+
+## Preview
+<img src="https://github.com/zahir2000/Refugee-Analysis/blob/master/Presentation/features.gif" height = "500px"/>
